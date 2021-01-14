@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5F9Y9HC95G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5F9Y9HC95G');
+</script>
+<script data-ad-client="ca-pub-8325812071117232" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Chrome, Firefox OS and Opera Status Bar Color -->
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:title" content="Web Scraping Hands-on Exercises">
+    <meta property="og:type" content="blog">
+  <title>Web Scraping Hands-on Exercises</title>
+<link rel="icon" type="image/png" href="/favicon.png"/>
+  <!-- Favicon -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <style>
+    :root {
+      font-size: 18px;
+    }
+
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+    <a href="index">
+      <div class="Navbar__Btn"> <span>Home</span></div>
+    </a>
+                                                                                                                                            <span class="Navbar__Delim">&centerdot;</span>
+    <a href="extras">
+      <div class="Navbar__Btn"> <span>Extras</span></div>
+    </a>
+                <span class="Navbar__Delim">&centerdot;</span>
+    <a href="about">
+      <div class="Navbar__Btn"> <span>About</span></div>
+    </a>
+                        <span class="Navbar__Delim">&centerdot;</span>
+    <a href="projects">
+      <div class="Navbar__Btn"> <span>Projects</span></div>
+    </a>
+                                <span class="Navbar__Delim">&centerdot;</span>
+    <a href="apps">
+      <div class="Navbar__Btn"> <span>Apps</span></div>
+    </a>
+                <span class="Navbar__Delim">&centerdot;</span>
+    <a href="notes">
+      <div class="Navbar__Btn"> <span>Notes</span></div>
+    </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </nav>
+  <header class="Header">
+          <div class="Header__Spacer Header__Spacer--NoCover">
+    </div>
+        <h1 class="Header__Title">Web Scraping Hands-on Exercises</h1>
+            <div class="DateTagBar">
+                <span class="DateTagBar__Item DateTagBar__Date">Posted on Fri, Jan 15, 2021</span>
+                          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--green">
+            <a href="tag/scraping">scraping</a>
+          </span>
+                <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
+            <a href="tag/exercises">exercises</a>
+          </span>
+                  </div>
+          </header>
+      <article id="https://www.notion.so/fda74b534c494e0bb39e149c608fabb8" class="PageRoot"><h1 id="https://www.notion.so/c8bda89e6f02404bb2372d552d4b68a5" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/c8bda89e6f02404bb2372d552d4b68a5"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Web Scraping with Gazpacho</span></span></h1><h3 id="https://www.notion.so/013e33221c804625ba9409e304b53df6" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/013e33221c804625ba9409e304b53df6"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Using gazpacho to Download and Parse the Contents of a Website</span></span></h3><div id="https://www.notion.so/6fd813b236a941e39378867477f29a7e" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Task: Scrape the names of the three &quot;Gorgons&quot;</span></span></p></div><div id="https://www.notion.so/5aaeb1530eda4975bf4ae7b85c4cb64f" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F22eb5c25-3d21-4e50-8c7c-3a7525dc2604%2FUntitled.png?width=1327&amp;table=block&amp;id=5aaeb153-0eda-4975-bf4a-e7b85c4cb64f"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F22eb5c25-3d21-4e50-8c7c-3a7525dc2604%2FUntitled.png?width=1327&amp;table=block&amp;id=5aaeb153-0eda-4975-bf4a-e7b85c4cb64f" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/3b2019e99d624bada57c5f5ceb11eef6" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h3 id="https://www.notion.so/b9502b0d8d60477bb409761e0773381c" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/b9502b0d8d60477bb409761e0773381c"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Using gazpacho and pandas to Retrieve the Contents of an HTML Table</span></span></h3><div id="https://www.notion.so/71dc46ca610648fcba788d8eb2574a90" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Task: Scrape the creature and habitat columns</span></span></p></div><div id="https://www.notion.so/661156fd83eb4d5584d89348d8bc7c42" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fed3d63b4-da02-4bfc-806f-5799c777c9a2%2FUntitled.png?width=1129&amp;table=block&amp;id=661156fd-83eb-4d55-84d8-9348d8bc7c42"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fed3d63b4-da02-4bfc-806f-5799c777c9a2%2FUntitled.png?width=1129&amp;table=block&amp;id=661156fd-83eb-4d55-84d8-9348d8bc7c42" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/37b0fc0fc3824a7eaba3522aa33aed28" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h3 id="https://www.notion.so/0d2e43e3e2ad459d8fd49763f9b7f192" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/0d2e43e3e2ad459d8fd49763f9b7f192"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Using gazpacho and Selenium to Retrieve the Contents of a Password-Protected Web Page</span></span></h3><div id="https://www.notion.so/86988e6f51a7437ebd937cd31142f318" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Task: Scrape the quote text behind the login form</span></span></p></div><div id="https://www.notion.so/083f8cbff6644f44bc4fa02d38a76d28" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F10211799-729c-41da-8dc7-ba13dbfe1645%2FUntitled.png?width=1366&amp;table=block&amp;id=083f8cbf-f664-4f44-bc4f-a02d38a76d28"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F10211799-729c-41da-8dc7-ba13dbfe1645%2FUntitled.png?width=1366&amp;table=block&amp;id=083f8cbf-f664-4f44-bc4f-a02d38a76d28" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/22bce6db0def4f9da15acda922805ebf" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h3 id="https://www.notion.so/a60edf391d134cc29f1e70330e200dcb" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/a60edf391d134cc29f1e70330e200dcb"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Using gazpacho and pytesseract to Parse the Contents of “Non-Text” Text Data</span></span></h3><div id="https://www.notion.so/726a046185894330a17404f6b52c48b3" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Task: Extract the embedded text</span></span></p></div><div id="https://www.notion.so/57587025413940e2a5ffa110982df714" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc1c92456-3103-46ce-8f97-9cecd832bb2b%2FUntitled.png?width=1139&amp;table=block&amp;id=57587025-4139-40e2-a5ff-a110982df714"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc1c92456-3103-46ce-8f97-9cecd832bb2b%2FUntitled.png?width=1139&amp;table=block&amp;id=57587025-4139-40e2-a5ff-a110982df714" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/22e3c475ce8045ff902f68030aaab954" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h3 id="https://www.notion.so/6c60498d8dc6468191ea3118fbc89645" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/6c60498d8dc6468191ea3118fbc89645"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Using gazpacho and urllib to Retrieve and Download Images, Videos, and Audio Clippings</span></span></h3><div id="https://www.notion.so/491b3a0a53a04da9b8ce45c080d34179" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Task: To download the Image, Audio and Video data</span></span></p></div><div id="https://www.notion.so/867599515061424ab063bbf08d7cf712" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5f972329-59eb-4e62-aaaf-c358336f0e36%2FUntitled.png?width=1099&amp;table=block&amp;id=86759951-5061-424a-b063-bbf08d7cf712"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5f972329-59eb-4e62-aaaf-c358336f0e36%2FUntitled.png?width=1099&amp;table=block&amp;id=86759951-5061-424a-b063-bbf08d7cf712" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/3ab109ba922b44d690de07ac452e284f" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h1 id="https://www.notion.so/cf69add7e5424242a4cb9a261d87ee74" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/cf69add7e5424242a4cb9a261d87ee74"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Web Scraping using Scrapy, BS4, and Selenium</span></span></h1><h3 id="https://www.notion.so/c3cdae92f6ef4cf28acbb381a5aaf9da" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/c3cdae92f6ef4cf28acbb381a5aaf9da"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Use Cases</span></span></h3><ol class="NumberedListWrapper"><li id="https://www.notion.so/609502f2d5ce4610aca2953066fe6e97" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Handling single request &amp; response by extracting a city’s weather from a weather site using Scrapy</span></span></li><li id="https://www.notion.so/6cda607f656249869dde59303e83c5f9" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Handling multiple request &amp; response by extracting book details from a dummy online book store using Scrapy</span></span></li><li id="https://www.notion.so/150668aa6a8e45dbb6b4c40c95aaf03f" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Scrape the cover images of all the books from the website </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://books.toscrape.com/">books.toscrape.com</a></span><span class="SemanticString"> using Scrapy</span></span></li><li id="https://www.notion.so/5e8b2640a15b4e789bd5d8423d40f586" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Logging into Facebook using Selenium</span></span></li><li id="https://www.notion.so/9d4e9b4584fc479093eb09b2c7e58a2d" class="NumberedList" value="5"><span class="SemanticStringArray"><span class="SemanticString">Extract PM2.5 data from </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://openaq.org">openaq.org</a></span><span class="SemanticString"> using Selenium</span></span></li><li id="https://www.notion.so/71d4e47928d64f26974a98db91974e5f" class="NumberedList" value="6"><span class="SemanticStringArray"><span class="SemanticString">Extract PM2.5 data from </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://openaq.org">openaq.org</a></span><span class="SemanticString"> using Selenium Scrapy</span></span></li></ol><h3 id="https://www.notion.so/eb18cbbc663a4445bd491ad6602467f7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/eb18cbbc663a4445bd491ad6602467f7"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Scrapy vs. Selenium</span></span></h3><div id="https://www.notion.so/3a828953c7ff48f58b18131d746d8cc4" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Selenium is an automation tool for testing web applications. It uses a webdriver as an interface to control webpages through programming languages. So, this gives Selenium the capability to handle dynamic webpages effectively. Selenium is capable of extracting data on its own. It is true, but it has its caveats. Selenium cannot handle large data, but Scrapy can handle large data with ease. Also, Selenium is much slower when compared to Scrapy. So, the smart choice would be to use Selenium with Scrapy to scrape dynamic webpages containing large data, consuming less time.</span></span></p></div><div id="https://www.notion.so/6e3518ab879a4e3abc7e38ad1813f365" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Combining Selenium with Scrapy is a simpler process. All that needs to be done is let Selenium render the webpage and once it is done, pass the webpage’s source to create a Scrapy Selector object. And from here on, Scrapy can crawl the page with ease and effectively extract a large amount of data.</span></span></p></div><pre id="https://www.notion.so/a74f414c48504d1a95885d7ed0518261" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># SKELETON FOR COMBINING SELENIUM WITH SCRAPY</span>
+<span class="token keyword">from</span> scrapy <span class="token keyword">import</span> Selector
+<span class="token comment"># Other Selenium and Scrapy imports</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+driver <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># Selenium tasks and actions to render the webpage with required content</span>
+selenium_response_text <span class="token operator">=</span> driver<span class="token punctuation">.</span>page_source
+new_selector <span class="token operator">=</span> Selector<span class="token punctuation">(</span>text<span class="token operator">=</span>selenium_response_text<span class="token punctuation">)</span>
+<span class="token comment"># Scrapy tasks to extract data from Selector</span></span></span></span></code></pre><h3 id="https://www.notion.so/5588a3be94d0419fa47a583767dd3e77" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/5588a3be94d0419fa47a583767dd3e77"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Use Case - Extract PM2.5 data from </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://openaq.org">openaq.org</a></span><span class="SemanticString"> using Selenium Scrapy</span></span></h3><div id="https://www.notion.so/9f0de0066a5a4bf0b4fee257528fa343" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Our goal here is to collect data on PM2.5 readings from all the countries listed on </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://openaq.org/">http://openaq.org</a></span><span class="SemanticString">. PM2.5 are the particulate matter (PM) that have a diameter lesser than 2.5 micrometres, which is way smaller than the diameter of a human hair.</span></span></p></div><div id="https://www.notion.so/86eac06bacb44db3bff470817010d033" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Process flow for extracting data from openaq:</span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/5d7aaafa7c6544a185dead8261af67f7" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Collecting country names as displayed on OpenAQ countries webpage. This would be used in selecting appropriate checkboxes.</span></span></li><li id="https://www.notion.so/bb761e93681c464ca90f3871bbf9caa6" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Collecting URLs that contain PM2.5 data from each country. There are countries that contain more than 20 PM2.5 readings from various locations. It would require further manipulation of the webpage, which is explained in the code section.</span></span></li><li id="https://www.notion.so/7a5480a76fa1433f934fbe19e17d5849" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Opening up the individual URL and extracting PM2.5 data.</span></span></li></ol><div id="https://www.notion.so/9ad9887d9db444b39af0bb1605a71eac" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h2 id="https://www.notion.so/c4cfecc1c06e42608dbd55ce7e5cf6f1" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/c4cfecc1c06e42608dbd55ce7e5cf6f1"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Code Repo</span></span></h2><div id="https://www.notion.so/7675f1f726c34fc498bfe028ba22b3bb" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcf721714-8694-4a6e-aeb6-51eac5f349e8%2FUntitled.png?width=1292&amp;table=block&amp;id=7675f1f7-26c3-4fc4-98bf-e028ba22b3bb"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcf721714-8694-4a6e-aeb6-51eac5f349e8%2FUntitled.png?width=1292&amp;table=block&amp;id=7675f1f7-26c3-4fc4-98bf-e028ba22b3bb" style="width:100%"/></a><figcaption><span class="SemanticStringArray"><span class="SemanticString">This is the repo. I will make it public shortly. There are some login passwords in plain text, have to remove them first. Though putting the 4-level depth directory structure to get a hint.</span></span></figcaption></figure></div><pre id="https://www.notion.so/b6be92fec1fa40edb3a451dc89d91dae" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>.
+├── airQuality
+│   ├── countries_list.json
+│   ├── get_countries.py
+│   ├── get_pm_data.py
+│   ├── get_urls.py
+│   ├── openaq_data.json
+│   ├── openaq_scraper.py
+│   ├── README.md
+│   └── urls.json
+├── airQualityScrapy
+│   ├── LICENSE
+│   ├── openaq
+│   │   ├── countries_list.json
+│   │   ├── openaq
+│   │   │   ├── __init__.py
+│   │   │   ├── items.py
+│   │   │   ├── middlewares.py
+│   │   │   ├── pipelines.py
+│   │   │   ├── settings.py
+│   │   │   └── spiders
+│   │   ├── output.json
+│   │   ├── README.md
+│   │   ├── scrapy.cfg
+│   │   └── urls.json
+│   ├── performance_comparison
+│   │   ├── performance_comparison
+│   │   │   ├── __init__.py
+│   │   │   ├── items.py
+│   │   │   ├── middlewares.py
+│   │   │   ├── pipelines.py
+│   │   │   ├── settings.py
+│   │   │   └── spiders
+│   │   ├── README.md
+│   │   ├── scrapy.cfg
+│   │   ├── scrapy_output.json
+│   │   └── selenium_scraper
+│   │       ├── bts_scraper.py
+│   │       ├── selenium_output.json
+│   │       └── urls.json
+│   └── README.md
+├── books
+│   ├── books
+│   │   ├── __init__.py
+│   │   ├── items.py
+│   │   ├── middlewares.py
+│   │   ├── pipelines.py
+│   │   ├── settings.py
+│   │   └── spiders
+│   │       ├── book_spider.py
+│   │       ├── crawl_spider.py
+│   │       └── __init__.py
+│   ├── crawl_spider_output.json
+│   ├── README.md
+│   └── scrapy.cfg
+├── booksCoverImage
+│   ├── booksCoverImage
+│   │   ├── __init__.py
+│   │   ├── items.py
+│   │   ├── middlewares.py
+│   │   ├── pipelines.py
+│   │   ├── settings.py
+│   │   └── spiders
+│   │       ├── image_crawl_spider.py
+│   │       └── __init__.py
+│   ├── output.json
+│   ├── path
+│   │   └── to
+│   │       └── store
+│   ├── README.md
+│   └── scrapy.cfg
+├── etc
+│   └── Selenium
+│       ├── chromedriver.exe
+│       ├── chromedriver_v87.exe
+│       └── install.sh
+├── facebook
+│   └── login.py
+├── gazpacho1
+│   ├── data
+│   │   ├── media
+│   │   ├── ocr
+│   │   ├── page
+│   │   ├── static
+│   │   │   └── stheno.mp4
+│   │   └── table
+│   ├── media
+│   │   ├── euryale.png
+│   │   ├── medusa.mp3
+│   │   ├── medusa.png
+│   │   ├── stheno.mp4
+│   │   └── test.png
+│   ├── scrap_login.py
+│   ├── scrap_media.py
+│   ├── scrap_ocr.py
+│   ├── scrap_page.py
+│   └── scrap_table.py
+├── houzzdotcom
+│   ├── houzzdotcom
+│   │   ├── __init__.py
+│   │   ├── items.py
+│   │   ├── middlewares.py
+│   │   ├── pipelines.py
+│   │   ├── settings.py
+│   │   └── spiders
+│   │       ├── crawl_spider.py
+│   │       └── __init__.py
+│   └── scrapy.cfg
+├── media
+│   └── test.png
+├── README.md
+├── scrapyPractice
+│   ├── scrapy.cfg
+│   └── scrapyPractice
+│       ├── __init__.py
+│       ├── items.py
+│       ├── middlewares.py
+│       ├── pipelines.py
+│       ├── settings.py
+│       └── spiders
+│           └── __init__.py
+└── weather
+    ├── output.json
+    ├── README.md
+    ├── scrapy.cfg
+    └── weather
+        ├── __init__.py
+        ├── items.py
+        ├── middlewares.py
+        ├── pipelines.py
+        ├── settings.py
+        └── spiders
+            ├── __init__.py
+            └── weather_spider.py
+
+35 directories, 98 files</span></span></span></code></pre><div id="https://www.notion.so/1972680041da42e7bd3a789c32609753" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></article>  <footer class="Footer">
+        <div>&copy; Blog 2019</div>
+        <div>&centerdot;</div>
+        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+            rel="noopener noreferrer">Notablog</a>.
+        </div>
+    </footer>
+</body>
+
+</html>
