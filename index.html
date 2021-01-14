@@ -19,13 +19,14 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <!-- Chrome, Firefox OS and Opera Status Bar Color -->
   <meta name="theme-color" content="#FFFFFF">
-  <meta property="og:title" content="Sparsh Agarwal">
-    <meta name="description" content="Instilling intelligence in machines, one epoch at a time">
-  <meta property="og:description" content="Instilling intelligence in machines, one epoch at a time">
+  <meta property="og:title" content="Blog Posts">
+    <meta name="description" content="Basics of machine learning and data science">
+  <meta property="og:description" content="Basics of machine learning and data science">
     <meta property="og:type" content="blog">
-  <title>Sparsh Agarwal</title>
+  <title>Blog Posts</title>
 <link rel="icon" type="image/png" href="/favicon.png"/>
   <!-- Favicon -->
+    <link rel="shortcut icon" href="📝">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
@@ -42,13 +43,9 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"> <span>Home</span></div>
+      <div class="Navbar__Btn"><span>📝</span> <span>Home</span></div>
     </a>
-                                                                                                                    <span class="Navbar__Delim">&centerdot;</span>
-    <a href="extras">
-      <div class="Navbar__Btn"> <span>Extras</span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
+                                                                                                                            <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
       <div class="Navbar__Btn"> <span>About</span></div>
     </a>
@@ -56,14 +53,30 @@
     <a href="news">
       <div class="Navbar__Btn"> <span>News</span></div>
     </a>
-                                          </nav>
+                <span class="Navbar__Delim">&centerdot;</span>
+    <a href="projects">
+      <div class="Navbar__Btn"> <span>Projects</span></div>
+    </a>
+                <span class="Navbar__Delim">&centerdot;</span>
+    <a href="apps">
+      <div class="Navbar__Btn"> <span>Apps</span></div>
+    </a>
+                <span class="Navbar__Delim">&centerdot;</span>
+    <a href="notes">
+      <div class="Navbar__Btn"> <span>Notes</span></div>
+    </a>
+          </nav>
   <header class="Header">
-        <div class="Header__Spacer Header__Spacer--NoCover">
+        <div class="Header__Cover">
+      <img src="https://www.notion.so/images/page-cover/nasa_tim_peake_spacewalk.jpg">
     </div>
-        <h1 class="Header__Title">Sparsh Agarwal</h1>
+        <div class="Header__Spacer ">
+    </div>
+        <div class="Header__Icon"><span>📝</span></div>
+        <h1 class="Header__Title">Blog Posts</h1>
         <div class="Header__Desc">
       <span class="Header__DescBigQuoteMark">&ldquo;</span>
-      <span class="SemanticStringArray"><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Instilling intelligence in machines, one epoch at a time</em></span></span>      <span class="Header__DescBigQuoteMark">&bdquo;</span>
+      <span class="SemanticStringArray"><span class="SemanticString">Basics of machine learning and data science</span></span>      <span class="Header__DescBigQuoteMark">&bdquo;</span>
     </div>
       </header>
   <article class="ArticleList">
@@ -72,8 +85,6 @@
                     <a href="object-detection-use-cases">
               Object Detection playground            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">We will discuss 4 use cases - 1) Detect faces, eyes, pedestrians, cars, and number plates using OpenCV haar cascade classifiers, 2) Streamlit app for MobileNet SSD Caffe Pre-trained model, 3) Streamlit app for various object detection models and use cases, and 4) Detect COCO-80 class objects in videos using TFHub MobileNet SSD model</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Jan 11, 2021</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--default">
@@ -95,8 +106,6 @@
                     <a href="detectron2">
               Detectron 2            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Basics of detectron2 and three use cases - balloon image segmentation, chipset board segmentation and face detection</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Fri, Dec 25, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--orange">
@@ -115,8 +124,6 @@
                     <a href="text-recommendation">
               Text Recommendation            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Recommend top-5 output documents for the given input query using NLP semantic similarity models</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Tue, Dec 8, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
@@ -129,8 +136,6 @@
                     <a href="agriculture-image-segmentation">
               Agricultural Image Segmentation            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Segment a 60-channel settalite image into 8 types of agricultural fields</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Wed, Dec 2, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--pink">
@@ -146,8 +151,6 @@
                     <a href="image-similarity">
               Image Similarity System            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">build an image similarity system using BiT model encoder and deploy on AWS Beanstalk</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Wed, Nov 25, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--orange">
@@ -163,8 +166,6 @@
                     <a href="semantic-similarity">
               Semantic Similarity            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Use NLP techniques to find semantic similarity between pair of documents</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Tue, Nov 17, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
@@ -180,8 +181,6 @@
                     <a href="electronics-resale-price-prediction">
               Predicting Electronics Resale Price            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Predict the resale price of electronics parts using neural net regression based techniques</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Tue, Oct 20, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--red">
@@ -197,8 +196,6 @@
                     <a href="vechicle-recommendation">
               Vehicle Recommendations            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">The customer owns a franchise store for selling Tesla Automobiles. The objective is to predict user preferences using social media data.</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Tue, Oct 6, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--green">
@@ -214,8 +211,6 @@
                     <a href="fakevoice-detection">
               Fake Voice Detection            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Detect synthetic fake voice using machine learning models</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Sep 28, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--purple">
@@ -231,8 +226,6 @@
                     <a href="email-classification">
               Email Classification            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Classify emails into 300+ categories using advanced NLP text classification models and transfer learning techniques</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Fri, Sep 18, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
@@ -248,8 +241,6 @@
                     <a href="hardware-semantics-search">
               Finding Hardware Parts in Warehouse            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Match the input text to strings using NLP techniques</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Fri, Jul 17, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
@@ -265,8 +256,6 @@
                     <a href="name-address-parsing">
               Name & Address Parsing            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Parse name and address from the address string. We used NLP named entity recognition techniques for this task</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Tue, Jul 7, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
@@ -285,8 +274,6 @@
                     <a href="pdf-to-wordcloud">
               PDF to Wordcloud via Mail            </a>
           </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">Email a pdf via outlook and you will receive a single image (geeks read: wordcloud) summarizing the whole pdf within a minute or so. It sounded magical to me for a day at least, around 3 years ago.  Then the trick behind the magic - a 30-line python script - was revealed the next day and it didn&#x27;t sounded magical anymore.</span></span>      </p>
             <div class="DateTagBar">
                   <span class="DateTagBar__Item DateTagBar__Date">Posted on Wed, Apr 15, 2020</span>
                             <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
@@ -297,9 +284,9 @@
           </span>
                   </div>
     </article>
-                                                                                                  </article>
+                                                                                      </article>
   <footer class="Footer">
-        <div>&copy; Sparsh Agarwal 2021</div>
+        <div>&copy; Blog Posts 2019</div>
         <div>&centerdot;</div>
         <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
