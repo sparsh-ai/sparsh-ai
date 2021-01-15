@@ -19,9 +19,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <!-- Chrome, Firefox OS and Opera Status Bar Color -->
   <meta name="theme-color" content="#FFFFFF">
-  <meta property="og:title" content="Object Detection Hands-on Exercises">
+  <meta property="og:title" content="Object Detection Hands-on">
     <meta property="og:type" content="blog">
-  <title>Object Detection Hands-on Exercises</title>
+  <title>Object Detection Hands-on</title>
 <link rel="icon" type="image/png" href="/favicon.png"/>
   <!-- Favicon -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
@@ -46,29 +46,29 @@
     <a href="index">
       <div class="Navbar__Btn"> <span>Home</span></div>
     </a>
-                                                                                                                                                    <span class="Navbar__Delim">&centerdot;</span>
-    <a href="about">
-      <div class="Navbar__Btn"> <span>About</span></div>
-    </a>
-                        <span class="Navbar__Delim">&centerdot;</span>
+                                                                                                                                            <span class="Navbar__Delim">&centerdot;</span>
     <a href="projects">
       <div class="Navbar__Btn"> <span>Projects</span></div>
-    </a>
-                                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="apps">
-      <div class="Navbar__Btn"> <span>Apps</span></div>
     </a>
                 <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
       <div class="Navbar__Btn"> <span>Notes</span></div>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </nav>
+                <span class="Navbar__Delim">&centerdot;</span>
+    <a href="apps">
+      <div class="Navbar__Btn"> <span>Apps</span></div>
+    </a>
+                <span class="Navbar__Delim">&centerdot;</span>
+    <a href="about">
+      <div class="Navbar__Btn"> <span>About</span></div>
+    </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </nav>
   <header class="Header">
           <div class="Header__Spacer Header__Spacer--NoCover">
     </div>
-        <h1 class="Header__Title">Object Detection Hands-on Exercises</h1>
+        <h1 class="Header__Title">Object Detection Hands-on</h1>
             <div class="DateTagBar">
-                <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Jan 11, 2021</span>
+                <span class="DateTagBar__Item DateTagBar__Date">Posted on Sun, Jan 3, 2021</span>
                           <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--default">
             <a href="tag/object detection">object detection</a>
           </span>
@@ -83,7 +83,7 @@
           </span>
                   </div>
           </header>
-      <article id="https://www.notion.so/32fe2467302b4d11b4f6fdcfe639b94a" class="PageRoot"><div id="https://www.notion.so/c470a04d0f3c41479192cd96fbc48e88" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">We will discuss the following 4 use cases:</span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/61cbcb98049d401b8e73bcbb261e91c8" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Detect faces, eyes, pedestrians, cars, and number plates using OpenCV haar cascade classifiers</span></span></li><li id="https://www.notion.so/fc79f43f73994f6b9549e26188effc97" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Streamlit app for MobileNet SSD Caffe Pre-trained model</span></span></li><li id="https://www.notion.so/5f48b1377007439db5f6309ff87226df" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Streamlit app for various object detection models and use cases</span></span></li><li id="https://www.notion.so/a5efb5b6a6404a54b84eb80131e92900" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Detect COCO-80 class objects in videos using TFHub MobileNet SSD model</span></span></li></ol><div id="https://www.notion.so/5c4b6996837b4cdc9c290fad5339a27b" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h3 id="https://www.notion.so/88633a6959964c46a583a52f0ebfaba3" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/88633a6959964c46a583a52f0ebfaba3"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">Use Case 1 -  </span></span><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Object detection with OpenCV</strong></span></span></span></h3><div id="https://www.notion.so/6fec2e42fc6248b2a4f431d94145f8bc" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Face detection</strong></span><span class="SemanticString"> - We will use the frontal face Haar cascade classifier model to detect faces in the given image. The following function first passes the given image into the classifier model to detect a list of face bounding boxes and then runs a loop to draw a red rectangle box around each detected face in the image:</span></span></p></div><pre id="https://www.notion.so/473f8634058f43aea293a0f41a788ab7" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token keyword">def</span> <span class="token function">detect_faces</span><span class="token punctuation">(</span>fix_img<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <article id="https://www.notion.so/32fe2467302b4d11b4f6fdcfe639b94a" class="PageRoot"><div id="https://www.notion.so/c470a04d0f3c41479192cd96fbc48e88" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">We are going to discuss the following 4 use cases:</span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/61cbcb98049d401b8e73bcbb261e91c8" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Detect faces, eyes, pedestrians, cars, and number plates using OpenCV haar cascade classifiers</span></span></li><li id="https://www.notion.so/fc79f43f73994f6b9549e26188effc97" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Streamlit app for MobileNet SSD Caffe Pre-trained model</span></span></li><li id="https://www.notion.so/5f48b1377007439db5f6309ff87226df" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Streamlit app for various object detection models and use cases</span></span></li><li id="https://www.notion.so/a5efb5b6a6404a54b84eb80131e92900" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Detect COCO-80 class objects in videos using TFHub MobileNet SSD model</span></span></li></ol><div id="https://www.notion.so/5c4b6996837b4cdc9c290fad5339a27b" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h3 id="https://www.notion.so/88633a6959964c46a583a52f0ebfaba3" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/88633a6959964c46a583a52f0ebfaba3"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">Use Case 1 -  </span></span><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Object detection with OpenCV</strong></span></span></span></h3><div id="https://www.notion.so/6fec2e42fc6248b2a4f431d94145f8bc" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Face detection</strong></span><span class="SemanticString"> - We will use the frontal face Haar cascade classifier model to detect faces in the given image. The following function first passes the given image into the classifier model to detect a list of face bounding boxes and then runs a loop to draw a red rectangle box around each detected face in the image:</span></span></p></div><pre id="https://www.notion.so/473f8634058f43aea293a0f41a788ab7" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token keyword">def</span> <span class="token function">detect_faces</span><span class="token punctuation">(</span>fix_img<span class="token punctuation">)</span><span class="token punctuation">:</span>
     face_rects <span class="token operator">=</span> face_classifier<span class="token punctuation">.</span>detectMultiScale<span class="token punctuation">(</span>fix_img<span class="token punctuation">)</span>
     <span class="token keyword">for</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> w<span class="token punctuation">,</span> h<span class="token punctuation">)</span> <span class="token keyword">in</span> face_rects<span class="token punctuation">:</span>
         cv2<span class="token punctuation">.</span>rectangle<span class="token punctuation">(</span>fix_img<span class="token punctuation">,</span>
