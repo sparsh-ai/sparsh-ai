@@ -24,13 +24,13 @@
   <title>Image Segmentation</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -61,13 +71,170 @@
     </div>
         <h1 class="Header__Title">Image Segmentation</h1>
           </header>
-      <article id="https://www.notion.so/f1eb7822cf4a428f95ac56128a6cb4b3" class="PageRoot"><div id="https://www.notion.so/755acad1a78d492e89b2822767a54178" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F33cd0bdc-d0a0-4ac6-b1e9-16d2839e064c%2FUntitled.png?width=800&amp;table=block&amp;id=755acad1-a78d-492e-89b2-822767a54178"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F33cd0bdc-d0a0-4ac6-b1e9-16d2839e064c%2FUntitled.png?width=800&amp;table=block&amp;id=755acad1-a78d-492e-89b2-822767a54178" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/288e53dce42c48159d244fe3e227e043" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Image segmentation is the task of assigning labels to each pixel of an image.</em></span></span></p></div><div id="https://www.notion.so/202c24c140994452b9e9fefe6272229e" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Applications — Medical imaging, self-driving cars, satellite imaging.</span></span></p></div><div id="https://www.notion.so/e72df8137ec94cd7b5978d5710dd21e3" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Tools — Detectron2, TFHub, TorchVision, DeepLab.</span></span></p></div><div id="https://www.notion.so/aef350d17d8643c4849cfb2450477af2" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Models</strong></span></span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/94acc9cd35934117a397e2b49f7d6adc" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">U-Net: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1505.04597"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">U-Net: Convolutional Networks for Biomedical Image Segmentation. arXiv, 2015.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">It was originally designed to perform medical image segmentation, but it works well on a wide variety of tasks, from segmenting cells on microscope images to detecting ships or houses on photos taken from satellites.</span></span></li><li id="https://www.notion.so/8481c0da20e6406d8735041dfc1135e0" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Mask R-CNN: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1703.06870"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Mask R-CNN. arXiv, 2017.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">The Mask R-CNN framework is built on top of Faster R-CNN. ****So, for a given image, Mask R-CNN, in addition to the class label and bounding box coordinates for each object, will also return the object mask.</span></span></li><li id="https://www.notion.so/12367e79a5a841819338ddf68c004c9c" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">DeepLabV3+: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1802.02611"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation. arXiv, 2018.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">It achieves a mean IOU score of 89% on the PASCAL VOC 2012 dataset.</span></span></li></ol><div id="https://www.notion.so/cc46d48e83954c268597a7dcf77e99bc" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">Use Cases</span></strong></span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/1bdd62cf845a433c93cf8546633ac8c3" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Satellite Image Segmentation for Agricultural Fields - An image with 1800 x 1135 resolution and 60 channels. Every Month 5 bands images were shot from agricultural land for 12 months. There is 8 type of croplands. The task is to classify all unknown label pixels into one of these 8 categories. U-Net model was trained from scratch on patches. Checkout </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Satellite-Image-Segmentation-for-Agricultural-Fields-9914b549617746578c509e0382deb211">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/d87586fe11004951b3ec4cc54769a802" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Detectron2 Fine-tuning - Fine-tune Detectron2 Mask R-CNN (with PointRend) model on new classes. It supports semantic, instance, and panoptic segmentation. We fine-tuned on balloons, chipsets, and faces. Checkout </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Detectron-2-bb7f769860fa434d923feef3a99f9cbb">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/061aa4bb6255443db271e8e5e290c715" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Industrial Use Cases for Image Segmentation - Experimented with 3 industrial use cases — Carvana Vehicle Image Masking, Airbus Ship Detection, and Severstal Steel Defect Detection. Checkout </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Kaggle-Image-Segmentation-Experiments-770728c2ef9a493da20863789b112d78">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/7e83549d305245e1b4db7c6ec0801ee9" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Real-time segmentation on Videos - Real-time tracking and segmentation with Siam Mask, semantic segmentation with LightNet++ and instance segmentation with YOLACT. Checkout </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Image-Segmentation-Inference-Experiments-26fac32c220f419a902121129b2924db">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/81b5b812eb42455d817a38e86affa7d1" class="NumberedList" value="5"><span class="SemanticStringArray"><span class="SemanticString">Image Segmentation Exercises - Thresholding with Otsu and Riddler–Calvard, Image segmentation with self-organizing maps, Random Walk segmentation with Scikit-image, Skin color segmentation with the GMM–EM algorithm, Medical image segmentation, Deep semantic segmentation, Deep instance segmentation. Checkout </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Image-Segmentation-Exercises-cc3262c55d374fb684362f5d333fb91a">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/76bbc6dd073043ac934ec87687156b5d" class="NumberedList" value="6"><span class="SemanticStringArray"><span class="SemanticString">TorchVision Inference Experiments - FCN-ResNet and DeepLabV3 (both are available in TorchVision library) inference. Available as a Streamlit app. Checkout </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/FCN-ResNet-vs-DeepLab-App-5168fac2ed0b42b1ad95a0b9e8b26d53">this</a></span><span class="SemanticString"> notion.</span></span></li></ol></article>  <footer class="Footer">
+      <article id="https://www.notion.so/f1eb7822cf4a428f95ac56128a6cb4b3" class="PageRoot">
+<div id="https://www.notion.so/755acad1a78d492e89b2822767a54178" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F33cd0bdc-d0a0-4ac6-b1e9-16d2839e064c%2FUntitled.png?width=800&amp;table=block&amp;id=755acad1-a78d-492e-89b2-822767a54178">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F33cd0bdc-d0a0-4ac6-b1e9-16d2839e064c%2FUntitled.png?width=800&amp;table=block&amp;id=755acad1-a78d-492e-89b2-822767a54178" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/288e53dce42c48159d244fe3e227e043" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Image segmentation is the task of assigning labels to each pixel of an image.</em>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/202c24c140994452b9e9fefe6272229e" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Applications — Medical imaging, self-driving cars, satellite imaging.</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/e72df8137ec94cd7b5978d5710dd21e3" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Tools — Detectron2, TFHub, TorchVision, DeepLab.</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/aef350d17d8643c4849cfb2450477af2" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Models</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/94acc9cd35934117a397e2b49f7d6adc" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">U-Net: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1505.04597">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">U-Net: Convolutional Networks for Biomedical Image Segmentation. arXiv, 2015.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">It was originally designed to perform medical image segmentation, but it works well on a wide variety of tasks, from segmenting cells on microscope images to detecting ships or houses on photos taken from satellites.</span>
+</span>
+</li>
+<li id="https://www.notion.so/8481c0da20e6406d8735041dfc1135e0" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">Mask R-CNN: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1703.06870">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Mask R-CNN. arXiv, 2017.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">The Mask R-CNN framework is built on top of Faster R-CNN. ****So, for a given image, Mask R-CNN, in addition to the class label and bounding box coordinates for each object, will also return the object mask.</span>
+</span>
+</li>
+<li id="https://www.notion.so/12367e79a5a841819338ddf68c004c9c" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">DeepLabV3+: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1802.02611">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation. arXiv, 2018.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">It achieves a mean IOU score of 89% on the PASCAL VOC 2012 dataset.</span>
+</span>
+</li>
+</ol>
+<div id="https://www.notion.so/cc46d48e83954c268597a7dcf77e99bc" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">Use Cases</span>
+</strong>
+</span>
+</span>
+</p>
+</div>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/1bdd62cf845a433c93cf8546633ac8c3" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">Satellite Image Segmentation for Agricultural Fields - An image with 1800 x 1135 resolution and 60 channels. Every Month 5 bands images were shot from agricultural land for 12 months. There is 8 type of croplands. The task is to classify all unknown label pixels into one of these 8 categories. U-Net model was trained from scratch on patches. Checkout </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Satellite-Image-Segmentation-for-Agricultural-Fields-9914b549617746578c509e0382deb211">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/d87586fe11004951b3ec4cc54769a802" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">Detectron2 Fine-tuning - Fine-tune Detectron2 Mask R-CNN (with PointRend) model on new classes. It supports semantic, instance, and panoptic segmentation. We fine-tuned on balloons, chipsets, and faces. Checkout </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Detectron-2-bb7f769860fa434d923feef3a99f9cbb">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/061aa4bb6255443db271e8e5e290c715" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">Industrial Use Cases for Image Segmentation - Experimented with 3 industrial use cases — Carvana Vehicle Image Masking, Airbus Ship Detection, and Severstal Steel Defect Detection. Checkout </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Kaggle-Image-Segmentation-Experiments-770728c2ef9a493da20863789b112d78">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/7e83549d305245e1b4db7c6ec0801ee9" class="NumberedList" value="4">
+<span class="SemanticStringArray">
+<span class="SemanticString">Real-time segmentation on Videos - Real-time tracking and segmentation with Siam Mask, semantic segmentation with LightNet++ and instance segmentation with YOLACT. Checkout </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Image-Segmentation-Inference-Experiments-26fac32c220f419a902121129b2924db">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/81b5b812eb42455d817a38e86affa7d1" class="NumberedList" value="5">
+<span class="SemanticStringArray">
+<span class="SemanticString">Image Segmentation Exercises - Thresholding with Otsu and Riddler–Calvard, Image segmentation with self-organizing maps, Random Walk segmentation with Scikit-image, Skin color segmentation with the GMM–EM algorithm, Medical image segmentation, Deep semantic segmentation, Deep instance segmentation. Checkout </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Image-Segmentation-Exercises-cc3262c55d374fb684362f5d333fb91a">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/76bbc6dd073043ac934ec87687156b5d" class="NumberedList" value="6">
+<span class="SemanticStringArray">
+<span class="SemanticString">TorchVision Inference Experiments - FCN-ResNet and DeepLabV3 (both are available in TorchVision library) inference. Available as a Streamlit app. Checkout </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/FCN-ResNet-vs-DeepLab-App-5168fac2ed0b42b1ad95a0b9e8b26d53">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+</ol>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html

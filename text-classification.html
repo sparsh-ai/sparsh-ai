@@ -24,13 +24,13 @@
   <title>Text Classification,_,</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -61,13 +71,194 @@
     </div>
         <h1 class="Header__Title">Text Classification,_,</h1>
           </header>
-      <article id="https://www.notion.so/7ce486424c254489bfcba5a7a18d0101" class="PageRoot"><div id="https://www.notion.so/87f8f54ca1bd421fa9710a8d5c96b1af" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9fd84042-edbe-4c55-8f3d-05658512eb23%2FUntitled.png?width=960&amp;table=block&amp;id=87f8f54c-a1bd-421f-a971-0a8d5c96b1af"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9fd84042-edbe-4c55-8f3d-05658512eb23%2FUntitled.png?width=960&amp;table=block&amp;id=87f8f54c-a1bd-421f-a971-0a8d5c96b1af" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/750e1db9864149a6abfdcef361155a59" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Text classification is a supervised learning method for learning and predicting the category or the class of a document given its text content. The state-of-the-art methods are based on neural networks of different architectures as well as pre-trained language models or word embeddings.</em></span></span></p></div><div id="https://www.notion.so/242607a65a474590a21631c49ecabb9d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Applications - Spam classification, sentiment analysis, email classification, service ticket classification, question and comment classification</span></span></p></div><div id="https://www.notion.so/2262b8a8486448b58ad9c80e117734db" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Scope - Muticlass and Multilabel classification</span></span></p></div><div id="https://www.notion.so/bba0706e8e9046c39c487a77010cd509" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Tools - TorchText, Spacy, NLTK, FastText, HuggingFace, pyss3</span></span></p></div><div id="https://www.notion.so/ebb3d2999e7c4d729fd854160b2afcb1" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Models</strong></span></span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/c64fc28b8e79436db78a48691c6a51db" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">FastText: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1607.01759"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Bag of Tricks for Efficient Text Classification. arXiv, 2016.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">fastText is an open-source library, developed by the Facebook AI Research lab. Its main focus is on achieving scalable solutions for the tasks of text classification and representation while processing large datasets quickly and accurately.</span></span></li><li id="https://www.notion.so/1b35ccb956e1497e8b159cebba7808d8" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">XLNet: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1906.08237"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">XLNet: Generalized Autoregressive Pretraining for Language Understanding. arXiv, 2019.</em></a></span></span></li><li id="https://www.notion.so/054e9cb8459e499e95ab1040def3194d" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">BERT: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1810.04805"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv, 2018.</em></a></span></span></li><li id="https://www.notion.so/0af08f3b17ab429a8cf0653c700c5e7f" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">TextCNN: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1801.06287"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">What Does a TextCNN Learn?. arXiv, 2018.</em></a></span></span></li><li id="https://www.notion.so/2d835240c03c4220a9b77f9847588203" class="NumberedList" value="5"><span class="SemanticStringArray"><span class="SemanticString">Embedding: Feature extraction using either any pre-trained embedding models (e.g. Glove, FastText embedding) or custom-trained embedding model (e.g. using Doc2Vec) and then training an ML classifier (e.g. SVM, Logistic regression) on these extracted features.</span></span></li><li id="https://www.notion.so/6b480759dd5e4c81a2edbbc94e7fd1e2" class="NumberedList" value="6"><span class="SemanticStringArray"><span class="SemanticString">Bag-of-words: Feature extraction using methods (CountVectorizer, TF-IDF) and then training an ML classifier (e.g. SVM, Logistic regression) on these extracted features.</span></span></li></ol><div id="https://www.notion.so/b652be10f3624b2b98cc987eccdf1c48" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown">Use Cases</span></strong></span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/622c2c92de6a4e8e953baac0b59135c6" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Email Classification - The objective is to build an email classifier, trained on 700K emails and 300+ categories. Preprocessing pipeline to handle HTML and template-based content. Ensemble of FastText and BERT classifier. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/MOFSL-Email-Classification-7a451afa54d446b7b8f2f656450c6167">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/fcc8450f4e3a43829876d1d712a7e1cb" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">User Sentiment towards Vaccine - Based on the tweets of the users, and manually annotated labels (label 0 means against vaccines and label 1 means in-favor of vaccine), build a binary text classifier. 1D-CNN was trained on the training dataset. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Twitter-Sentiment-Analysis-18d2d4ca41314b88a18db5c93f9eb2b2">this</a></span><span class="SemanticString"> notion</span></span></li><li id="https://www.notion.so/5b4d98d8297142d5bc11e22a4e45521d" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">ServiceNow IT Ticket Classification - Based on the short description, along with a long description if available for that particular ticket, identify the subject of the incident ticket in order to automatically classify it into a set of pre-defined categories. e.g. If custom wrote “Oracle connection giving error”, this ticket type should be labeled as “Database”. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/ESMCafe-IT-Support-Ticket-Management-69965830d39d486194f9a2f1222a81d8">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/36a8958d2baa4bd4b329f47258cba6c6" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Toxic Comment Classification - Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Toxic-Comment-Classification-Challenge-affac70cc5614f6dad38ab11ac15e1ab">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/14659b7138654a598ef5d9922c601d40" class="NumberedList" value="5"><span class="SemanticStringArray"><span class="SemanticString">Pre-trained Transformer Experiments - Experiment with different types of text classification models that are available in the HuggingFace Transformer library. Wrapped experiment based inference as a streamlit app.</span></span></li><li id="https://www.notion.so/9023f05e439d42d7b6de9f6db99b7beb" class="NumberedList" value="6"><span class="SemanticStringArray"><span class="SemanticString">Long Docs Classification - Check out this </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://colab.research.google.com/github/ArmandDS/bert_for_long_text/blob/master/final_bert_long_docs.ipynb">colab</a></span><span class="SemanticString">.</span></span></li><li id="https://www.notion.so/07047b4012044cdeb6f54abfac7f3aee" class="NumberedList" value="7"><span class="SemanticStringArray"><span class="SemanticString">BERT Sentiment Classification - Scrap App reviews data from Android playstore. Fine-tune a BERT model to classify the review as positive, neutral or negative. And then deploy the model as an API using FastAPI. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/BERT-Sentiment-Analysis-and-FastAPI-Deployment-d0d19b234561445a84517538ad211405">this</a></span><span class="SemanticString"> notion.</span></span></li></ol></article>  <footer class="Footer">
+      <article id="https://www.notion.so/7ce486424c254489bfcba5a7a18d0101" class="PageRoot">
+<div id="https://www.notion.so/87f8f54ca1bd421fa9710a8d5c96b1af" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9fd84042-edbe-4c55-8f3d-05658512eb23%2FUntitled.png?width=960&amp;table=block&amp;id=87f8f54c-a1bd-421f-a971-0a8d5c96b1af">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9fd84042-edbe-4c55-8f3d-05658512eb23%2FUntitled.png?width=960&amp;table=block&amp;id=87f8f54c-a1bd-421f-a971-0a8d5c96b1af" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/750e1db9864149a6abfdcef361155a59" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Text classification is a supervised learning method for learning and predicting the category or the class of a document given its text content. The state-of-the-art methods are based on neural networks of different architectures as well as pre-trained language models or word embeddings.</em>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/242607a65a474590a21631c49ecabb9d" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Applications - Spam classification, sentiment analysis, email classification, service ticket classification, question and comment classification</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/2262b8a8486448b58ad9c80e117734db" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Scope - Muticlass and Multilabel classification</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/bba0706e8e9046c39c487a77010cd509" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Tools - TorchText, Spacy, NLTK, FastText, HuggingFace, pyss3</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/ebb3d2999e7c4d729fd854160b2afcb1" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Models</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/c64fc28b8e79436db78a48691c6a51db" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">FastText: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1607.01759">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Bag of Tricks for Efficient Text Classification. arXiv, 2016.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">fastText is an open-source library, developed by the Facebook AI Research lab. Its main focus is on achieving scalable solutions for the tasks of text classification and representation while processing large datasets quickly and accurately.</span>
+</span>
+</li>
+<li id="https://www.notion.so/1b35ccb956e1497e8b159cebba7808d8" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">XLNet: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1906.08237">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">XLNet: Generalized Autoregressive Pretraining for Language Understanding. arXiv, 2019.</em>
+</a>
+</span>
+</span>
+</li>
+<li id="https://www.notion.so/054e9cb8459e499e95ab1040def3194d" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">BERT: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1810.04805">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv, 2018.</em>
+</a>
+</span>
+</span>
+</li>
+<li id="https://www.notion.so/0af08f3b17ab429a8cf0653c700c5e7f" class="NumberedList" value="4">
+<span class="SemanticStringArray">
+<span class="SemanticString">TextCNN: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1801.06287">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">What Does a TextCNN Learn?. arXiv, 2018.</em>
+</a>
+</span>
+</span>
+</li>
+<li id="https://www.notion.so/2d835240c03c4220a9b77f9847588203" class="NumberedList" value="5">
+<span class="SemanticStringArray">
+<span class="SemanticString">Embedding: Feature extraction using either any pre-trained embedding models (e.g. Glove, FastText embedding) or custom-trained embedding model (e.g. using Doc2Vec) and then training an ML classifier (e.g. SVM, Logistic regression) on these extracted features.</span>
+</span>
+</li>
+<li id="https://www.notion.so/6b480759dd5e4c81a2edbbc94e7fd1e2" class="NumberedList" value="6">
+<span class="SemanticStringArray">
+<span class="SemanticString">Bag-of-words: Feature extraction using methods (CountVectorizer, TF-IDF) and then training an ML classifier (e.g. SVM, Logistic regression) on these extracted features.</span>
+</span>
+</li>
+</ol>
+<div id="https://www.notion.so/b652be10f3624b2b98cc987eccdf1c48" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">Use Cases</span>
+</strong>
+</span>
+</span>
+</p>
+</div>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/622c2c92de6a4e8e953baac0b59135c6" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">Email Classification - The objective is to build an email classifier, trained on 700K emails and 300+ categories. Preprocessing pipeline to handle HTML and template-based content. Ensemble of FastText and BERT classifier. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/MOFSL-Email-Classification-7a451afa54d446b7b8f2f656450c6167">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/fcc8450f4e3a43829876d1d712a7e1cb" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">User Sentiment towards Vaccine - Based on the tweets of the users, and manually annotated labels (label 0 means against vaccines and label 1 means in-favor of vaccine), build a binary text classifier. 1D-CNN was trained on the training dataset. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Twitter-Sentiment-Analysis-18d2d4ca41314b88a18db5c93f9eb2b2">this</a>
+</span>
+<span class="SemanticString"> notion</span>
+</span>
+</li>
+<li id="https://www.notion.so/5b4d98d8297142d5bc11e22a4e45521d" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">ServiceNow IT Ticket Classification - Based on the short description, along with a long description if available for that particular ticket, identify the subject of the incident ticket in order to automatically classify it into a set of pre-defined categories. e.g. If custom wrote “Oracle connection giving error”, this ticket type should be labeled as “Database”. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/ESMCafe-IT-Support-Ticket-Management-69965830d39d486194f9a2f1222a81d8">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/36a8958d2baa4bd4b329f47258cba6c6" class="NumberedList" value="4">
+<span class="SemanticStringArray">
+<span class="SemanticString">Toxic Comment Classification - Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Toxic-Comment-Classification-Challenge-affac70cc5614f6dad38ab11ac15e1ab">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/14659b7138654a598ef5d9922c601d40" class="NumberedList" value="5">
+<span class="SemanticStringArray">
+<span class="SemanticString">Pre-trained Transformer Experiments - Experiment with different types of text classification models that are available in the HuggingFace Transformer library. Wrapped experiment based inference as a streamlit app.</span>
+</span>
+</li>
+<li id="https://www.notion.so/9023f05e439d42d7b6de9f6db99b7beb" class="NumberedList" value="6">
+<span class="SemanticStringArray">
+<span class="SemanticString">Long Docs Classification - Check out this </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://colab.research.google.com/github/ArmandDS/bert_for_long_text/blob/master/final_bert_long_docs.ipynb">colab</a>
+</span>
+<span class="SemanticString">.</span>
+</span>
+</li>
+<li id="https://www.notion.so/07047b4012044cdeb6f54abfac7f3aee" class="NumberedList" value="7">
+<span class="SemanticStringArray">
+<span class="SemanticString">BERT Sentiment Classification - Scrap App reviews data from Android playstore. Fine-tune a BERT model to classify the review as positive, neutral or negative. And then deploy the model as an API using FastAPI. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/BERT-Sentiment-Analysis-and-FastAPI-Deployment-d0d19b234561445a84517538ad211405">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+</ol>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html

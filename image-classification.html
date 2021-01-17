@@ -24,13 +24,13 @@
   <title>Image Classification</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -62,16 +72,266 @@
       </div>
           <div class="Header__Spacer ">
     </div>
-        <div class="Header__Icon"><span><img class="inline-img-icon" src="https://super.so/icon/dark/image.svg"></span></div>
+        <div class="Header__Icon">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/image.svg">
+</span>
+</div>
         <h1 class="Header__Title">Image Classification</h1>
           </header>
-      <article id="https://www.notion.so/0777ea53b8134f148b74b8354489ca41" class="PageRoot"><div id="https://www.notion.so/3efaabe07fe046b7a6040d886111af95" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb74535ed-dceb-4269-a944-a90275250614%2FUntitled.png?width=800&amp;table=block&amp;id=3efaabe0-7fe0-46b7-a604-0d886111af95"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb74535ed-dceb-4269-a944-a90275250614%2FUntitled.png?width=800&amp;table=block&amp;id=3efaabe0-7fe0-46b7-a604-0d886111af95" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/de2fddecae3844689771c76966819c9c" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/1031b57fe3c14cd2bdb3dff069329b42" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Image classifier analyses an image and identifies the ‘class’ the image falls under. (Or a probability of the image being part of a ‘class’). A class is essentially a label, for instance, &#x27;car&#x27;, &#x27;animal&#x27;, &#x27;building&#x27;, and so on. Common applications are Automated Image Organization, Backbone for advanced tasks like object detection, pose estimation, action recognition etc.</span></span></p></div><h2 id="https://www.notion.so/6c3f450427364d098d0fb77cc8818306" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/6c3f450427364d098d0fb77cc8818306"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Models</span></span></h2><ol class="NumberedListWrapper"><li id="https://www.notion.so/7a19bbe84b2047c2b7f6195eaaec8fc3" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">ResNet - </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1512.03385"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Deep Residual Learning for Image Recognition. ICLR, 2016.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">A very popular model that is often used as a backbone CNN to extract visual representations. It achieves a Top 1 accuracy of 76.1 on ImageNet (1000 categories).</span></span></li><li id="https://www.notion.so/b74a36c46f3d4d12b92daf6beec19fda" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">MobileNet - </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1905.02244"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Searching for MobileNetV3. ICCV, 2019.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">A lean mobile network that achieves an accuracy of 76.0 on ImageNet (1000 categories).</span></span></li><li id="https://www.notion.so/56121a0d9e8240b3a4c2d9b8e975ef18" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">EfficientNet - </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1905.11946"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. ICML, 2019.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">It achieves a Top 1 accuracy of 81.3 on ImageNet (1000 categories).</span></span></li><li id="https://www.notion.so/3d17685d689e4b5d88e6a76bdf242c9c" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">BiT - </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1912.11370"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Big Transfer (BiT): General Visual Representation Learning. arXiv, 2020.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">It achieves a Top 1 accuracy of 85.4 on ImageNet (1000 categories).</span></span></li><li id="https://www.notion.so/1a2fc222c3244f4b8a991409daae6b54" class="NumberedList" value="5"><span class="SemanticStringArray"><span class="SemanticString">ViT - </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/2010.11929"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. ICLR, 2021.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">It showed that the reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. This model achieves a Top 1 accuracy of 87.8 on ImageNet (1000 categories).</span></span></li></ol><h2 id="https://www.notion.so/9c568e892806422bb47abe946cc39113" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/9c568e892806422bb47abe946cc39113"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Use Cases</span></span></h2><ol class="NumberedListWrapper"><li id="https://www.notion.so/4d1322c6be344ee08c10e715f315518c" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">STL-10 Object Classification - Fine-tune a 10-class classifier in PyTorch. </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://nbviewer.jupyter.org/gist/sparsh-ai/9443e483250d7072d7fa6ac4062d7ae1">Notebook</a></span><span class="SemanticString">.</span></span></li><li id="https://www.notion.so/2595e03b211e4a049ec22081c4fd4284" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Flower Classification. </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://nbviewer.jupyter.org/gist/sparsh-ai/1fa06c1ee28b5b94c2181537f7cc8c27">Notebook + Gradio App</a></span><span class="SemanticString">.</span></span></li><li id="https://www.notion.so/ecf5f8ad0a5d443597e897e5b13ab3ae" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Cancer Image Classification - </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://nbviewer.jupyter.org/gist/sparsh-ai/dca65bfc01846700c0057def0f8316af">notebook</a></span><span class="SemanticString">.</span></span></li><li id="https://www.notion.so/b961b7ec3dfd4e5e96963694058ac822" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Traffic Sign Classification - Train a 43-class image classifier from scratch in Keras. This is available as Streamlit App.</span></span></li><li id="https://www.notion.so/15b9a48c47cc49c4a6e8faadcb34666f" class="NumberedList" value="5"><span class="SemanticStringArray"><span class="SemanticString">Plant Disease Classification - Available as a Streamlit App.</span></span></li><li id="https://www.notion.so/fa1252cdae3f4a97bb09a5ea4c392ca5" class="NumberedList" value="6"><span class="SemanticStringArray"><span class="SemanticString">Brain Tumor Classification - Available as a Streamlit App</span></span></li><li id="https://www.notion.so/0dfd45ef72e745fb9fbffd36f1712790" class="NumberedList" value="7"><span class="SemanticStringArray"><span class="SemanticString">TorchVision Pre-trained Classifiers - PyTorch TorchVision provides more than 10 pre-trained image classification model, which can be easily fine-tuned on a custom image dataset. Here I experimented with VGG11, AlexNet, ResNet18, and MobileNetV2.</span></span></li><li id="https://www.notion.so/e32170b33ed34ab498fe6910641ee419" class="NumberedList" value="8"><span class="SemanticStringArray"><span class="SemanticString">EfficientNet Fine-tuning - Fine-tune EfficientNet in TF Keras to build a dog classifier. There are 120 classes of dogs. The data is available in Tensorflow datasets. Check out the blog </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/">here</a></span><span class="SemanticString">.</span></span></li><li id="https://www.notion.so/8c3805d8b5ce485b8ff5bc8f2a95978a" class="NumberedList" value="9"><span class="SemanticStringArray"><span class="SemanticString">BiT Fine-tuning - Fine-tune Big-Transfer few-shot model. This model is available in TFHub. Checkout this </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://colab.research.google.com/github/google-research/big_transfer/blob/master/colabs/big_transfer_tf2.ipynb">Colab</a></span><span class="SemanticString">.</span></span></li><li id="https://www.notion.so/11333b763b5b44edaa25630b246a78ed" class="NumberedList" value="10"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://towardsdatascience.com/deploying-an-image-classification-web-app-with-python-3753c46bb79">Rock Paper Scissor Classifier Streamlit and Heroku</a></span></span></li></ol><div id="https://www.notion.so/73ab36fd5b6849e5b446bcd718cbe339" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">10. </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://jtwang1027.github.io/streamlit/">Multimodel Streamlit with GCP Load Test</a></span></span></p></div><div id="https://www.notion.so/bae15d78cfed47189defcb98e5161179" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">11. </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://pypi.org/project/vision-transformer-pytorch/">ViT Pytorch Pip</a></span></span></p></div><div id="https://www.notion.so/2b152672f4bc4c3ebeed8de5eb58046d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">12. </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://colab.research.google.com/github/google-research/vision_transformer/blob/master/vit_jax.ipynb">ViT Colab</a></span></span></p></div><h2 id="https://www.notion.so/0d308ae3982b4ec7bdbc0d1ed3a6870e" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/0d308ae3982b4ec7bdbc0d1ed3a6870e"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Links and References</span></span></h2><div id="https://www.notion.so/b3107dd8628146a7894794ecb46ab16c" class="Bookmark"><a href="https://colab.research.google.com/drive/1cqjZfxrVmujUSd2vq7qFxwRBk7MitVii#scrollTo=BTUxSHXyxY5e"><h5 class="Bookmark__Title">Google Colaboratory</h5><p class="Bookmark__Link">https://colab.research.google.com/drive/1cqjZfxrVmujUSd2vq7qFxwRBk7MitVii#scrollTo=BTUxSHXyxY5e</p></a></div><div id="https://www.notion.so/c1db30eb67a54084952e12e8b7ab0506" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></article>  <footer class="Footer">
+      <article id="https://www.notion.so/0777ea53b8134f148b74b8354489ca41" class="PageRoot">
+<div id="https://www.notion.so/3efaabe07fe046b7a6040d886111af95" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb74535ed-dceb-4269-a944-a90275250614%2FUntitled.png?width=800&amp;table=block&amp;id=3efaabe0-7fe0-46b7-a604-0d886111af95">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb74535ed-dceb-4269-a944-a90275250614%2FUntitled.png?width=800&amp;table=block&amp;id=3efaabe0-7fe0-46b7-a604-0d886111af95" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/de2fddecae3844689771c76966819c9c" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/1031b57fe3c14cd2bdb3dff069329b42" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Image classifier analyses an image and identifies the ‘class’ the image falls under. (Or a probability of the image being part of a ‘class’). A class is essentially a label, for instance, &#x27;car&#x27;, &#x27;animal&#x27;, &#x27;building&#x27;, and so on. Common applications are Automated Image Organization, Backbone for advanced tasks like object detection, pose estimation, action recognition etc.</span>
+</span>
+</p>
+</div>
+<h2 id="https://www.notion.so/6c3f450427364d098d0fb77cc8818306" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/6c3f450427364d098d0fb77cc8818306">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Models</span>
+</span>
+</h2>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/7a19bbe84b2047c2b7f6195eaaec8fc3" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">ResNet - </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1512.03385">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Deep Residual Learning for Image Recognition. ICLR, 2016.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">A very popular model that is often used as a backbone CNN to extract visual representations. It achieves a Top 1 accuracy of 76.1 on ImageNet (1000 categories).</span>
+</span>
+</li>
+<li id="https://www.notion.so/b74a36c46f3d4d12b92daf6beec19fda" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">MobileNet - </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1905.02244">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Searching for MobileNetV3. ICCV, 2019.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">A lean mobile network that achieves an accuracy of 76.0 on ImageNet (1000 categories).</span>
+</span>
+</li>
+<li id="https://www.notion.so/56121a0d9e8240b3a4c2d9b8e975ef18" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">EfficientNet - </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1905.11946">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. ICML, 2019.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">It achieves a Top 1 accuracy of 81.3 on ImageNet (1000 categories).</span>
+</span>
+</li>
+<li id="https://www.notion.so/3d17685d689e4b5d88e6a76bdf242c9c" class="NumberedList" value="4">
+<span class="SemanticStringArray">
+<span class="SemanticString">BiT - </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1912.11370">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Big Transfer (BiT): General Visual Representation Learning. arXiv, 2020.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">It achieves a Top 1 accuracy of 85.4 on ImageNet (1000 categories).</span>
+</span>
+</li>
+<li id="https://www.notion.so/1a2fc222c3244f4b8a991409daae6b54" class="NumberedList" value="5">
+<span class="SemanticStringArray">
+<span class="SemanticString">ViT - </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/2010.11929">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. ICLR, 2021.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">It showed that the reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. This model achieves a Top 1 accuracy of 87.8 on ImageNet (1000 categories).</span>
+</span>
+</li>
+</ol>
+<h2 id="https://www.notion.so/9c568e892806422bb47abe946cc39113" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/9c568e892806422bb47abe946cc39113">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Use Cases</span>
+</span>
+</h2>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/4d1322c6be344ee08c10e715f315518c" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">STL-10 Object Classification - Fine-tune a 10-class classifier in PyTorch. </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://nbviewer.jupyter.org/gist/sparsh-ai/9443e483250d7072d7fa6ac4062d7ae1">Notebook</a>
+</span>
+<span class="SemanticString">.</span>
+</span>
+</li>
+<li id="https://www.notion.so/2595e03b211e4a049ec22081c4fd4284" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">Flower Classification. </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://nbviewer.jupyter.org/gist/sparsh-ai/1fa06c1ee28b5b94c2181537f7cc8c27">Notebook + Gradio App</a>
+</span>
+<span class="SemanticString">.</span>
+</span>
+</li>
+<li id="https://www.notion.so/ecf5f8ad0a5d443597e897e5b13ab3ae" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">Cancer Image Classification - </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://nbviewer.jupyter.org/gist/sparsh-ai/dca65bfc01846700c0057def0f8316af">notebook</a>
+</span>
+<span class="SemanticString">.</span>
+</span>
+</li>
+<li id="https://www.notion.so/b961b7ec3dfd4e5e96963694058ac822" class="NumberedList" value="4">
+<span class="SemanticStringArray">
+<span class="SemanticString">Traffic Sign Classification - Train a 43-class image classifier from scratch in Keras. This is available as Streamlit App.</span>
+</span>
+</li>
+<li id="https://www.notion.so/15b9a48c47cc49c4a6e8faadcb34666f" class="NumberedList" value="5">
+<span class="SemanticStringArray">
+<span class="SemanticString">Plant Disease Classification - Available as a Streamlit App.</span>
+</span>
+</li>
+<li id="https://www.notion.so/fa1252cdae3f4a97bb09a5ea4c392ca5" class="NumberedList" value="6">
+<span class="SemanticStringArray">
+<span class="SemanticString">Brain Tumor Classification - Available as a Streamlit App</span>
+</span>
+</li>
+<li id="https://www.notion.so/0dfd45ef72e745fb9fbffd36f1712790" class="NumberedList" value="7">
+<span class="SemanticStringArray">
+<span class="SemanticString">TorchVision Pre-trained Classifiers - PyTorch TorchVision provides more than 10 pre-trained image classification model, which can be easily fine-tuned on a custom image dataset. Here I experimented with VGG11, AlexNet, ResNet18, and MobileNetV2.</span>
+</span>
+</li>
+<li id="https://www.notion.so/e32170b33ed34ab498fe6910641ee419" class="NumberedList" value="8">
+<span class="SemanticStringArray">
+<span class="SemanticString">EfficientNet Fine-tuning - Fine-tune EfficientNet in TF Keras to build a dog classifier. There are 120 classes of dogs. The data is available in Tensorflow datasets. Check out the blog </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/">here</a>
+</span>
+<span class="SemanticString">.</span>
+</span>
+</li>
+<li id="https://www.notion.so/8c3805d8b5ce485b8ff5bc8f2a95978a" class="NumberedList" value="9">
+<span class="SemanticStringArray">
+<span class="SemanticString">BiT Fine-tuning - Fine-tune Big-Transfer few-shot model. This model is available in TFHub. Checkout this </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://colab.research.google.com/github/google-research/big_transfer/blob/master/colabs/big_transfer_tf2.ipynb">Colab</a>
+</span>
+<span class="SemanticString">.</span>
+</span>
+</li>
+<li id="https://www.notion.so/11333b763b5b44edaa25630b246a78ed" class="NumberedList" value="10">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://towardsdatascience.com/deploying-an-image-classification-web-app-with-python-3753c46bb79">Rock Paper Scissor Classifier Streamlit and Heroku</a>
+</span>
+</span>
+</li>
+</ol>
+<div id="https://www.notion.so/73ab36fd5b6849e5b446bcd718cbe339" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">10. </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://jtwang1027.github.io/streamlit/">Multimodel Streamlit with GCP Load Test</a>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/bae15d78cfed47189defcb98e5161179" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">11. </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://pypi.org/project/vision-transformer-pytorch/">ViT Pytorch Pip</a>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/2b152672f4bc4c3ebeed8de5eb58046d" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">12. </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://colab.research.google.com/github/google-research/vision_transformer/blob/master/vit_jax.ipynb">ViT Colab</a>
+</span>
+</span>
+</p>
+</div>
+<h2 id="https://www.notion.so/0d308ae3982b4ec7bdbc0d1ed3a6870e" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/0d308ae3982b4ec7bdbc0d1ed3a6870e">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Links and References</span>
+</span>
+</h2>
+<div id="https://www.notion.so/b3107dd8628146a7894794ecb46ab16c" class="Bookmark">
+<a target="_blank" href="https://colab.research.google.com/drive/1cqjZfxrVmujUSd2vq7qFxwRBk7MitVii#scrollTo=BTUxSHXyxY5e">
+<h5 class="Bookmark__Title">Google Colaboratory</h5>
+<p class="Bookmark__Link">https://colab.research.google.com/drive/1cqjZfxrVmujUSd2vq7qFxwRBk7MitVii#scrollTo=BTUxSHXyxY5e</p>
+</a>
+</div>
+<div id="https://www.notion.so/c1db30eb67a54084952e12e8b7ab0506" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html

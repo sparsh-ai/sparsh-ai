@@ -24,13 +24,13 @@
   <title>Name & Address Parsing</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -64,15 +74,588 @@
                 <span class="DateTagBar__Item DateTagBar__Date">Posted on Wed, Jan 6, 2021</span>
                             </div>
           </header>
-      <article id="https://www.notion.so/3c5212b00dc04c3c8398b06f39b396be" class="PageRoot"><div id="https://www.notion.so/443af0d081804573be78faa905fb529a" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6613ab64-578c-4a3b-aa08-122f7bf797b3%2FUntitled.png?width=700&amp;table=block&amp;id=443af0d0-8180-4573-be78-faa905fb529a"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6613ab64-578c-4a3b-aa08-122f7bf797b3%2FUntitled.png?width=700&amp;table=block&amp;id=443af0d0-8180-4573-be78-faa905fb529a" style="width:700px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/56508208136d426c96b2dd48dab4348b" class="Divider"></div><h1 id="https://www.notion.so/251b00a11d894b9286e7abbc3d536ad5" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/251b00a11d894b9286e7abbc3d536ad5"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Introduction</span></span></h1><div id="https://www.notion.so/17bd9c81b8784a67b77bf6d388617af9" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Create an API that can parse and classify names and addresses given a string. We tried </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/datamade/probablepeople">probablepeople</a></span><span class="SemanticString"> and </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/datamade/usaddress">usaddress</a></span><span class="SemanticString">. These work well separately but need the functionality of these packages combined, and better accuracy than what probablepeople provides.
-For the API, I&#x27;d like to mimic </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://parserator.datamade.us/api-docs/">this</a></span><span class="SemanticString"> with some minor modifications.
-A few examples: </span></span></p></div><ul class="BulletedListWrapper"><li id="https://www.notion.so/7d0a7954a72f445aa173b8e0465e78e6" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&quot;</span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorOrange">KING</mark></span><span class="SemanticString"> </span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorYellow">JOHN </mark></span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorGreen">A</mark></span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorGray"> 5643 ROUTH CREEK PKWY #1314</mark></span><span class="SemanticString"> </span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBlue">RICHARDSON </mark></span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorPurple">TEXAS </mark></span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorRed">750820146 </mark></span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBrown">UNITED STATES OF AMERICA</mark></span><span class="SemanticString">&quot; would return type: person; first_name: JOHN; last_name: KING; middle: A; street_address: 5643 ROUTH CREEK PKWY #1314; city: RICHARDSON; state: TEXAS; zip: 75082-0146; country: UNITED STATES OF AMERICA. </span></span></li><li id="https://www.notion.so/e3e4703776c74a7287d8f108a1e54791" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&quot;</span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorPink">THRM NGUYEN LIVING TRUST</mark></span><span class="SemanticString"> </span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorGray">2720 SUMMERTREE CARROLLTON</mark></span><span class="SemanticString"> </span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBlue">HOUSTON</mark></span><span class="SemanticString"> </span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorPurple">TEXAS</mark></span><span class="SemanticString"> </span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorRed">750062646 </mark></span><span class="SemanticString"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBrown">UNITED STATES OF AMERICA</mark></span><span class="SemanticString">&quot; would return type: entity; name: THRM NGUYEN LIVING TRUST; street_address: 2720 SUMMERTREE CARROLLTON; state: TEXAS; city: HOUSTON; zip: 75006-2646; country: UNITED STATES OF AMERICA.</span></span></li></ul><h1 id="https://www.notion.so/8dc4a11f63de49cc8cc4b23894f5ecdc" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/8dc4a11f63de49cc8cc4b23894f5ecdc"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Modeling Approach</span></span></h1><h3 id="https://www.notion.so/669cb710b75c430ba66c46b239677614" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/669cb710b75c430ba66c46b239677614"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">List of Entities</span></span></h3><div id="https://www.notion.so/7b085af4aa904dbb85d83519e9b20408" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">List of Entities A - Person, Household, Corporation</span></span></p></div><div id="https://www.notion.so/bf56ba973e11452ba7ec7f067bbf5395" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">List of Entities B - Person First name, Person Middle name, Person Last name, Street address, City, State, Pincode, Country, Company name</span></span></p></div><h3 id="https://www.notion.so/51382ff9f4ba49c9a5e916274005488f" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/51382ff9f4ba49c9a5e916274005488f"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Endpoint Configuration</span></span></h3><div id="https://www.notion.so/13ce698c515d420fbaf058c720bb4086" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">OOR Endpoint</strong></span></span></span></p></div><div id="https://www.notion.so/b25e5b35c90943a98478005b06c60332" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Input Instance: ANDERSON, EARLINE 1423 NEW YORK AVE FORT WORTH, TX 76104 7522</span></span></p></div><div id="https://www.notion.so/e8f98e226a3d406db154680af73f4b17" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Output Tags:-</span></span></p></div><ul class="BulletedListWrapper"><li id="https://www.notion.so/9ac780eaf4064b679c9618700b193d22" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Type&gt; - Person/Household/Corporation</span></span></li><li id="https://www.notion.so/a28c00cfb61b4ed7b949bfd3305c1c25" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;GivenName&gt;, &lt;MiddleName&gt;, &lt;Surname&gt; - if Type Person/Household</span></span></li><li id="https://www.notion.so/56e3729794b24079b6f0f9f5bd6d7a45" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Name&gt; - Full Name - if Type Person </span></span></li><li id="https://www.notion.so/f3d1006aca7b4c779b25f28e7e11c12a" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Name&gt; - Household - if Type Household</span></span></li><li id="https://www.notion.so/cd2a9ee14b9c4938906dab7322b2f7b4" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Name&gt; - Corporation - If Type Corporation</span></span></li><li id="https://www.notion.so/916d416a55e54b508842d67ff3335c66" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Address&gt; - Full Address</span></span></li><li id="https://www.notion.so/23dc05ec43604b8c9547d14e69da5aae" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;StreetAddress&gt;, &lt;City&gt;, &lt;State&gt;, &lt;Zipcode&gt;, &lt;Country&gt;</span></span></li><li id="https://www.notion.so/8b014194914b4cfbbbbf22f86608790d" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><del class="SemanticString__Fragment SemanticString__Fragment--Strike">NameConfidence, AddrConfidence</del></span></span></li></ul><div id="https://www.notion.so/af74fed39eda4f4cad460847b5812661" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Name Endpoint</strong></span></span></span></p></div><div id="https://www.notion.so/1c7081d329304a1689f35eb8e3f5bcef" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Input Instance: ANDERSON, EARLINE</span></span></p></div><div id="https://www.notion.so/f1cacf1fd49f4cb4a711dccd224cc374" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Output Tags:-</span></span></p></div><ul class="BulletedListWrapper"><li id="https://www.notion.so/a732d81f4649433c80904755f9726367" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Type&gt; - Person/Household/Corporation</span></span></li><li id="https://www.notion.so/a95749fd6b7b450dacb3ff35f2047aa4" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;GivenName&gt;, &lt;MiddleName&gt;, &lt;Surname&gt; - if Type Person/Household</span></span></li><li id="https://www.notion.so/0b595054e0ab4e519cff7bf92cea1ffb" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Name&gt; - Full Name - if Type Person </span></span></li><li id="https://www.notion.so/10e8a098b7dd444b937a77b028c1024b" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Name&gt; - Household - if Type Household</span></span></li><li id="https://www.notion.so/f18b9795aac647849560feb1a8f9bbda" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Name&gt; - Corporation - If Type Corporation</span></span></li><li id="https://www.notion.so/5c6646537cca47789a753502cd9da8b4" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><del class="SemanticString__Fragment SemanticString__Fragment--Strike">NameConfidence</del></span></span></li></ul><div id="https://www.notion.so/95d2d10c7e8b4c7eb3a21ca67bfdb46c" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Address Endpoint</strong></span></span></span></p></div><div id="https://www.notion.so/9837afd5e6354f758a658f6af199947a" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Input Instance: 1423 NEW YORK AVE FORT WORTH, TX 76104 7522</span></span></p></div><div id="https://www.notion.so/326044e53980455d9b90e350cbbf9c02" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Output Tags:-</span></span></p></div><ul class="BulletedListWrapper"><li id="https://www.notion.so/c96bbbbda532427ab9eddc5ebc450647" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;Address&gt; - Full Address</span></span></li><li id="https://www.notion.so/b9074e56d0c442c4bf5b5bc218429c94" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">&lt;StreetAddress&gt;, &lt;City&gt;, &lt;State&gt;, &lt;Zipcode&gt;, &lt;Country&gt;</span></span></li><li id="https://www.notion.so/921904c137a748e5b0138c18e7bcd64d" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><del class="SemanticString__Fragment SemanticString__Fragment--Strike">AddrConfidence</del></span></span></li></ul><h3 id="https://www.notion.so/9d5a7e70ab774b27b211a080b54d5a2c" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/9d5a7e70ab774b27b211a080b54d5a2c"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Process Flow</span></span></h3><ul class="BulletedListWrapper"><li id="https://www.notion.so/3ffe49668528420da19f1428c6afff99" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Pytorch Flair NER model</span></span></li><li id="https://www.notion.so/62a83529e0484cd98e0ac9048e88178f" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Pretrained word embeddings</span></span></li><li id="https://www.notion.so/5332b18ad0f043eca2a1e2589687d15a" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Additonal parsing models on top of name tags</span></span></li><li id="https://www.notion.so/650e0191901b4074a0b4f5c801265bb8" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Tagging of 1000+ records to create training data</span></span></li><li id="https://www.notion.so/007281b5e62549919b320af0f90f71ed" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Deployment as REST api with 3 endpoints - name parse, address parse and whole string parse</span></span></li></ul><h1 id="https://www.notion.so/bf8386e7f8fe40478f61910131438bdd" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/bf8386e7f8fe40478f61910131438bdd"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Framework</span></span></h1><div id="https://www.notion.so/22f32425407e437385c09a0b615a9760" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb6cabb29-4f11-4fae-90ba-c046fe8d8753%2FUntitled.png?width=1299&amp;table=block&amp;id=22f32425-407e-4373-85c0-9a0b615a9760"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb6cabb29-4f11-4fae-90ba-c046fe8d8753%2FUntitled.png?width=1299&amp;table=block&amp;id=22f32425-407e-4373-85c0-9a0b615a9760" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/c71258508bc04a4599d644157e4602d0" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9d021d24-5dc5-4205-a751-78521aebba0b%2FUntitled.png?width=1302&amp;table=block&amp;id=c7125850-8bc0-4a45-99d6-44157e4602d0"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9d021d24-5dc5-4205-a751-78521aebba0b%2FUntitled.png?width=1302&amp;table=block&amp;id=c7125850-8bc0-4a45-99d6-44157e4602d0" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><h1 id="https://www.notion.so/5be12af56a334a9dbfa5612235e52912" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/5be12af56a334a9dbfa5612235e52912"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Tagging process</span></span></h1><div id="https://www.notion.so/047c4182fa9942509461f1ea7fe5f687" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">I used Doccano (</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/doccano/doccano">https://github.com/doccano/doccano</a></span><span class="SemanticString">) for labeling the dataset. This tool is open-source and free to use. I deployed it with a one-click Heroku service (fig 1). After launching the app, log in with the provided credentials, and create a project (fig 2). Create the labels and upload the dataset (fig 3). Start the annotation process (fig 4). Now after enough annotations (you do not need complete all annotations in one go), go back to projects &gt; edit section and export the data (fig 5). Bring the exported JSON file in python and run the model training code. The whole model will automatically get trained on the new annotations. To make the training faster, you can use Nvidia GPU support.</span></span></p></div><div id="https://www.notion.so/3d15d03c853d445395e83b1334dad50d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/dfb86f8c01f44fffaa2e66274ac1d74e" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F81ddf8ef-3afe-4850-8ebd-b073f1068fa5%2FUntitled.png?width=432&amp;table=block&amp;id=dfb86f8c-01f4-4fff-aa2e-66274ac1d74e"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F81ddf8ef-3afe-4850-8ebd-b073f1068fa5%2FUntitled.png?width=432&amp;table=block&amp;id=dfb86f8c-01f4-4fff-aa2e-66274ac1d74e" style="width:432px"/></a><figcaption><span class="SemanticStringArray"><span class="SemanticString">fig 1: screenshot taken from Doccano&#x27;s github page</span></span></figcaption></figure></div><div id="https://www.notion.so/7ac650d15a5041b084db51a0e7a8b209" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/5f832ffb979f41379df88b815f79251d" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3709a17b-68ab-4801-8ad8-f85ec8a6fde1%2FUntitled.png?width=528&amp;table=block&amp;id=5f832ffb-979f-4137-9df8-8b815f79251d"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3709a17b-68ab-4801-8ad8-f85ec8a6fde1%2FUntitled.png?width=528&amp;table=block&amp;id=5f832ffb-979f-4137-9df8-8b815f79251d" style="width:100%"/></a><figcaption><span class="SemanticStringArray"><span class="SemanticString">fig 2: Doccano&#x27;s deployed app homepage</span></span></figcaption></figure></div><div id="https://www.notion.so/145b43b5d8d143338054128785792342" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/7acf6f5fb47d46b6841b2d10936d4692" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F177ba129-91a4-464d-9e6c-3f3a3868b593%2FUntitled.png?width=1349&amp;table=block&amp;id=7acf6f5f-b47d-46b6-841b-2d10936d4692"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F177ba129-91a4-464d-9e6c-3f3a3868b593%2FUntitled.png?width=1349&amp;table=block&amp;id=7acf6f5f-b47d-46b6-841b-2d10936d4692" style="width:100%"/></a><figcaption><span class="SemanticStringArray"><span class="SemanticString">fig 3: create the labels. I defined these labels for my project</span></span></figcaption></figure></div><div id="https://www.notion.so/1479d789826e497b97a87850a0c3de71" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/9079110057b64960b66951d1ecb2fb46" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/03372029477e4a73a7383fe3b5ee42c4" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa7e25047-a8ac-4a48-92af-fdab3974be75%2FUntitled.png?width=1342&amp;table=block&amp;id=03372029-477e-4a73-a738-3fe3b5ee42c4"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa7e25047-a8ac-4a48-92af-fdab3974be75%2FUntitled.png?width=1342&amp;table=block&amp;id=03372029-477e-4a73-a738-3fe3b5ee42c4" style="width:100%"/></a><figcaption><span class="SemanticStringArray"><span class="SemanticString">fig 5: export the annotations</span></span></figcaption></figure></div><h1 id="https://www.notion.so/aa55e95860eb4835baf644a1ec409ac5" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/aa55e95860eb4835baf644a1ec409ac5"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Model</span></span></h1><div id="https://www.notion.so/776a5972259a49e7b04f5474ba9484fd" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">I first tried the Spacy NER blank model but it was not giving high-quality results. So I moved to the PyTorch Flair NER model. This model was a way faster (5 min training because of GPU compatibility comparing to 1-hour Spacy training time) and also much more accurate. F1 results for all tags were near perfect (score of 1).  This score will increase further with more labeled data. This model is production-ready.</span></span></p></div><h1 id="https://www.notion.so/6bed7706f6224fe28c9a2e50728a8e23" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/6bed7706f6224fe28c9a2e50728a8e23"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Inference</span></span></h1><div id="https://www.notion.so/77c95356b5684098afb1fb798acb65ab" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">For OOR, I directly used the model&#x27;s output for core tagging and created the aggregated tags like recipient (aggregation of name tags) and address (aggregation of address tags like city and state) using simple conditional concatenation. For only Name and only Address inference, I added the dummy address in name text and dummy name in address text. This way, I passed the text in same model and later on filtered the required tags as output. </span></span></p></div><h3 id="https://www.notion.so/3f309f11e702438c80ada660a5237336" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/3f309f11e702438c80ada660a5237336"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">API</span></span></h3><div id="https://www.notion.so/eb6a95fd827e417282e9b459051b2253" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">I used Flask REST framework in Python to build the API with 3 endpoints. This API is production-ready.</span></span></p></div><h1 id="https://www.notion.so/fb7e1fe464484f58a0fd8f5956c7add7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/fb7e1fe464484f58a0fd8f5956c7add7"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Results and Discussion</span></span></h1><ul class="BulletedListWrapper"><li id="https://www.notion.so/b36e95bc9b2643948300d189234d3fc9" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">0.99 F1 score on 6 out of 8 tags &amp; 0.95+ F1 score on other 2 tags</span></span></li><li id="https://www.notion.so/cc319b325c464dfb8865a77f3d6810a0" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">API inference time of less than 1 second on single CPU</span></span></li></ul></article>  <footer class="Footer">
+      <article id="https://www.notion.so/3c5212b00dc04c3c8398b06f39b396be" class="PageRoot">
+<div id="https://www.notion.so/443af0d081804573be78faa905fb529a" class="Image Image--Normal">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6613ab64-578c-4a3b-aa08-122f7bf797b3%2FUntitled.png?width=700&amp;table=block&amp;id=443af0d0-8180-4573-be78-faa905fb529a">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6613ab64-578c-4a3b-aa08-122f7bf797b3%2FUntitled.png?width=700&amp;table=block&amp;id=443af0d0-8180-4573-be78-faa905fb529a" style="width:700px"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/56508208136d426c96b2dd48dab4348b" class="Divider">
+</div>
+<h1 id="https://www.notion.so/251b00a11d894b9286e7abbc3d536ad5" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/251b00a11d894b9286e7abbc3d536ad5">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Introduction</span>
+</span>
+</h1>
+<div id="https://www.notion.so/17bd9c81b8784a67b77bf6d388617af9" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Create an API that can parse and classify names and addresses given a string. We tried </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://github.com/datamade/probablepeople">probablepeople</a>
+</span>
+<span class="SemanticString"> and </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://github.com/datamade/usaddress">usaddress</a>
+</span>
+<span class="SemanticString">. These work well separately but need the functionality of these packages combined, and better accuracy than what probablepeople provides.
+For the API, I&#x27;d like to mimic </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://parserator.datamade.us/api-docs/">this</a>
+</span>
+<span class="SemanticString"> with some minor modifications.
+A few examples: </span>
+</span>
+</p>
+</div>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/7d0a7954a72f445aa173b8e0465e78e6" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&quot;</span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorOrange">KING</mark>
+</span>
+<span class="SemanticString"> </span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorYellow">JOHN </mark>
+</span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorGreen">A</mark>
+</span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorGray"> 5643 ROUTH CREEK PKWY #1314</mark>
+</span>
+<span class="SemanticString"> </span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBlue">RICHARDSON </mark>
+</span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorPurple">TEXAS </mark>
+</span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorRed">750820146 </mark>
+</span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBrown">UNITED STATES OF AMERICA</mark>
+</span>
+<span class="SemanticString">&quot; would return type: person; first_name: JOHN; last_name: KING; middle: A; street_address: 5643 ROUTH CREEK PKWY #1314; city: RICHARDSON; state: TEXAS; zip: 75082-0146; country: UNITED STATES OF AMERICA. </span>
+</span>
+</li>
+<li id="https://www.notion.so/e3e4703776c74a7287d8f108a1e54791" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&quot;</span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorPink">THRM NGUYEN LIVING TRUST</mark>
+</span>
+<span class="SemanticString"> </span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorGray">2720 SUMMERTREE CARROLLTON</mark>
+</span>
+<span class="SemanticString"> </span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBlue">HOUSTON</mark>
+</span>
+<span class="SemanticString"> </span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorPurple">TEXAS</mark>
+</span>
+<span class="SemanticString"> </span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorRed">750062646 </mark>
+</span>
+<span class="SemanticString">
+<mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBrown">UNITED STATES OF AMERICA</mark>
+</span>
+<span class="SemanticString">&quot; would return type: entity; name: THRM NGUYEN LIVING TRUST; street_address: 2720 SUMMERTREE CARROLLTON; state: TEXAS; city: HOUSTON; zip: 75006-2646; country: UNITED STATES OF AMERICA.</span>
+</span>
+</li>
+</ul>
+<h1 id="https://www.notion.so/8dc4a11f63de49cc8cc4b23894f5ecdc" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/8dc4a11f63de49cc8cc4b23894f5ecdc">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Modeling Approach</span>
+</span>
+</h1>
+<h3 id="https://www.notion.so/669cb710b75c430ba66c46b239677614" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/669cb710b75c430ba66c46b239677614">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">List of Entities</span>
+</span>
+</h3>
+<div id="https://www.notion.so/7b085af4aa904dbb85d83519e9b20408" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">List of Entities A - Person, Household, Corporation</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/bf56ba973e11452ba7ec7f067bbf5395" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">List of Entities B - Person First name, Person Middle name, Person Last name, Street address, City, State, Pincode, Country, Company name</span>
+</span>
+</p>
+</div>
+<h3 id="https://www.notion.so/51382ff9f4ba49c9a5e916274005488f" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/51382ff9f4ba49c9a5e916274005488f">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Endpoint Configuration</span>
+</span>
+</h3>
+<div id="https://www.notion.so/13ce698c515d420fbaf058c720bb4086" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">OOR Endpoint</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/b25e5b35c90943a98478005b06c60332" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Input Instance: ANDERSON, EARLINE 1423 NEW YORK AVE FORT WORTH, TX 76104 7522</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/e8f98e226a3d406db154680af73f4b17" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Output Tags:-</span>
+</span>
+</p>
+</div>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/9ac780eaf4064b679c9618700b193d22" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Type&gt; - Person/Household/Corporation</span>
+</span>
+</li>
+<li id="https://www.notion.so/a28c00cfb61b4ed7b949bfd3305c1c25" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;GivenName&gt;, &lt;MiddleName&gt;, &lt;Surname&gt; - if Type Person/Household</span>
+</span>
+</li>
+<li id="https://www.notion.so/56e3729794b24079b6f0f9f5bd6d7a45" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Name&gt; - Full Name - if Type Person </span>
+</span>
+</li>
+<li id="https://www.notion.so/f3d1006aca7b4c779b25f28e7e11c12a" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Name&gt; - Household - if Type Household</span>
+</span>
+</li>
+<li id="https://www.notion.so/cd2a9ee14b9c4938906dab7322b2f7b4" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Name&gt; - Corporation - If Type Corporation</span>
+</span>
+</li>
+<li id="https://www.notion.so/916d416a55e54b508842d67ff3335c66" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Address&gt; - Full Address</span>
+</span>
+</li>
+<li id="https://www.notion.so/23dc05ec43604b8c9547d14e69da5aae" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;StreetAddress&gt;, &lt;City&gt;, &lt;State&gt;, &lt;Zipcode&gt;, &lt;Country&gt;</span>
+</span>
+</li>
+<li id="https://www.notion.so/8b014194914b4cfbbbbf22f86608790d" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<del class="SemanticString__Fragment SemanticString__Fragment--Strike">NameConfidence, AddrConfidence</del>
+</span>
+</span>
+</li>
+</ul>
+<div id="https://www.notion.so/af74fed39eda4f4cad460847b5812661" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Name Endpoint</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/1c7081d329304a1689f35eb8e3f5bcef" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Input Instance: ANDERSON, EARLINE</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/f1cacf1fd49f4cb4a711dccd224cc374" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Output Tags:-</span>
+</span>
+</p>
+</div>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/a732d81f4649433c80904755f9726367" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Type&gt; - Person/Household/Corporation</span>
+</span>
+</li>
+<li id="https://www.notion.so/a95749fd6b7b450dacb3ff35f2047aa4" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;GivenName&gt;, &lt;MiddleName&gt;, &lt;Surname&gt; - if Type Person/Household</span>
+</span>
+</li>
+<li id="https://www.notion.so/0b595054e0ab4e519cff7bf92cea1ffb" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Name&gt; - Full Name - if Type Person </span>
+</span>
+</li>
+<li id="https://www.notion.so/10e8a098b7dd444b937a77b028c1024b" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Name&gt; - Household - if Type Household</span>
+</span>
+</li>
+<li id="https://www.notion.so/f18b9795aac647849560feb1a8f9bbda" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Name&gt; - Corporation - If Type Corporation</span>
+</span>
+</li>
+<li id="https://www.notion.so/5c6646537cca47789a753502cd9da8b4" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<del class="SemanticString__Fragment SemanticString__Fragment--Strike">NameConfidence</del>
+</span>
+</span>
+</li>
+</ul>
+<div id="https://www.notion.so/95d2d10c7e8b4c7eb3a21ca67bfdb46c" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Address Endpoint</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/9837afd5e6354f758a658f6af199947a" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Input Instance: 1423 NEW YORK AVE FORT WORTH, TX 76104 7522</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/326044e53980455d9b90e350cbbf9c02" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Output Tags:-</span>
+</span>
+</p>
+</div>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/c96bbbbda532427ab9eddc5ebc450647" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;Address&gt; - Full Address</span>
+</span>
+</li>
+<li id="https://www.notion.so/b9074e56d0c442c4bf5b5bc218429c94" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">&lt;StreetAddress&gt;, &lt;City&gt;, &lt;State&gt;, &lt;Zipcode&gt;, &lt;Country&gt;</span>
+</span>
+</li>
+<li id="https://www.notion.so/921904c137a748e5b0138c18e7bcd64d" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<del class="SemanticString__Fragment SemanticString__Fragment--Strike">AddrConfidence</del>
+</span>
+</span>
+</li>
+</ul>
+<h3 id="https://www.notion.so/9d5a7e70ab774b27b211a080b54d5a2c" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/9d5a7e70ab774b27b211a080b54d5a2c">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Process Flow</span>
+</span>
+</h3>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/3ffe49668528420da19f1428c6afff99" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Pytorch Flair NER model</span>
+</span>
+</li>
+<li id="https://www.notion.so/62a83529e0484cd98e0ac9048e88178f" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Pretrained word embeddings</span>
+</span>
+</li>
+<li id="https://www.notion.so/5332b18ad0f043eca2a1e2589687d15a" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Additonal parsing models on top of name tags</span>
+</span>
+</li>
+<li id="https://www.notion.so/650e0191901b4074a0b4f5c801265bb8" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Tagging of 1000+ records to create training data</span>
+</span>
+</li>
+<li id="https://www.notion.so/007281b5e62549919b320af0f90f71ed" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Deployment as REST api with 3 endpoints - name parse, address parse and whole string parse</span>
+</span>
+</li>
+</ul>
+<h1 id="https://www.notion.so/bf8386e7f8fe40478f61910131438bdd" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/bf8386e7f8fe40478f61910131438bdd">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Framework</span>
+</span>
+</h1>
+<div id="https://www.notion.so/22f32425407e437385c09a0b615a9760" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb6cabb29-4f11-4fae-90ba-c046fe8d8753%2FUntitled.png?width=1299&amp;table=block&amp;id=22f32425-407e-4373-85c0-9a0b615a9760">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb6cabb29-4f11-4fae-90ba-c046fe8d8753%2FUntitled.png?width=1299&amp;table=block&amp;id=22f32425-407e-4373-85c0-9a0b615a9760" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/c71258508bc04a4599d644157e4602d0" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9d021d24-5dc5-4205-a751-78521aebba0b%2FUntitled.png?width=1302&amp;table=block&amp;id=c7125850-8bc0-4a45-99d6-44157e4602d0">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9d021d24-5dc5-4205-a751-78521aebba0b%2FUntitled.png?width=1302&amp;table=block&amp;id=c7125850-8bc0-4a45-99d6-44157e4602d0" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<h1 id="https://www.notion.so/5be12af56a334a9dbfa5612235e52912" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/5be12af56a334a9dbfa5612235e52912">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Tagging process</span>
+</span>
+</h1>
+<div id="https://www.notion.so/047c4182fa9942509461f1ea7fe5f687" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">I used Doccano (</span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://github.com/doccano/doccano">https://github.com/doccano/doccano</a>
+</span>
+<span class="SemanticString">) for labeling the dataset. This tool is open-source and free to use. I deployed it with a one-click Heroku service (fig 1). After launching the app, log in with the provided credentials, and create a project (fig 2). Create the labels and upload the dataset (fig 3). Start the annotation process (fig 4). Now after enough annotations (you do not need complete all annotations in one go), go back to projects &gt; edit section and export the data (fig 5). Bring the exported JSON file in python and run the model training code. The whole model will automatically get trained on the new annotations. To make the training faster, you can use Nvidia GPU support.</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/3d15d03c853d445395e83b1334dad50d" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/dfb86f8c01f44fffaa2e66274ac1d74e" class="Image Image--Normal">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F81ddf8ef-3afe-4850-8ebd-b073f1068fa5%2FUntitled.png?width=432&amp;table=block&amp;id=dfb86f8c-01f4-4fff-aa2e-66274ac1d74e">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F81ddf8ef-3afe-4850-8ebd-b073f1068fa5%2FUntitled.png?width=432&amp;table=block&amp;id=dfb86f8c-01f4-4fff-aa2e-66274ac1d74e" style="width:432px"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+<span class="SemanticString">fig 1: screenshot taken from Doccano&#x27;s github page</span>
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/7ac650d15a5041b084db51a0e7a8b209" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/5f832ffb979f41379df88b815f79251d" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3709a17b-68ab-4801-8ad8-f85ec8a6fde1%2FUntitled.png?width=528&amp;table=block&amp;id=5f832ffb-979f-4137-9df8-8b815f79251d">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3709a17b-68ab-4801-8ad8-f85ec8a6fde1%2FUntitled.png?width=528&amp;table=block&amp;id=5f832ffb-979f-4137-9df8-8b815f79251d" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+<span class="SemanticString">fig 2: Doccano&#x27;s deployed app homepage</span>
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/145b43b5d8d143338054128785792342" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/7acf6f5fb47d46b6841b2d10936d4692" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F177ba129-91a4-464d-9e6c-3f3a3868b593%2FUntitled.png?width=1349&amp;table=block&amp;id=7acf6f5f-b47d-46b6-841b-2d10936d4692">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F177ba129-91a4-464d-9e6c-3f3a3868b593%2FUntitled.png?width=1349&amp;table=block&amp;id=7acf6f5f-b47d-46b6-841b-2d10936d4692" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+<span class="SemanticString">fig 3: create the labels. I defined these labels for my project</span>
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/1479d789826e497b97a87850a0c3de71" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/9079110057b64960b66951d1ecb2fb46" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/03372029477e4a73a7383fe3b5ee42c4" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa7e25047-a8ac-4a48-92af-fdab3974be75%2FUntitled.png?width=1342&amp;table=block&amp;id=03372029-477e-4a73-a738-3fe3b5ee42c4">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa7e25047-a8ac-4a48-92af-fdab3974be75%2FUntitled.png?width=1342&amp;table=block&amp;id=03372029-477e-4a73-a738-3fe3b5ee42c4" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+<span class="SemanticString">fig 5: export the annotations</span>
+</span>
+</figcaption>
+</figure>
+</div>
+<h1 id="https://www.notion.so/aa55e95860eb4835baf644a1ec409ac5" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/aa55e95860eb4835baf644a1ec409ac5">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Model</span>
+</span>
+</h1>
+<div id="https://www.notion.so/776a5972259a49e7b04f5474ba9484fd" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">I first tried the Spacy NER blank model but it was not giving high-quality results. So I moved to the PyTorch Flair NER model. This model was a way faster (5 min training because of GPU compatibility comparing to 1-hour Spacy training time) and also much more accurate. F1 results for all tags were near perfect (score of 1).  This score will increase further with more labeled data. This model is production-ready.</span>
+</span>
+</p>
+</div>
+<h1 id="https://www.notion.so/6bed7706f6224fe28c9a2e50728a8e23" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/6bed7706f6224fe28c9a2e50728a8e23">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Inference</span>
+</span>
+</h1>
+<div id="https://www.notion.so/77c95356b5684098afb1fb798acb65ab" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">For OOR, I directly used the model&#x27;s output for core tagging and created the aggregated tags like recipient (aggregation of name tags) and address (aggregation of address tags like city and state) using simple conditional concatenation. For only Name and only Address inference, I added the dummy address in name text and dummy name in address text. This way, I passed the text in same model and later on filtered the required tags as output. </span>
+</span>
+</p>
+</div>
+<h3 id="https://www.notion.so/3f309f11e702438c80ada660a5237336" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/3f309f11e702438c80ada660a5237336">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">API</span>
+</span>
+</h3>
+<div id="https://www.notion.so/eb6a95fd827e417282e9b459051b2253" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">I used Flask REST framework in Python to build the API with 3 endpoints. This API is production-ready.</span>
+</span>
+</p>
+</div>
+<h1 id="https://www.notion.so/fb7e1fe464484f58a0fd8f5956c7add7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/fb7e1fe464484f58a0fd8f5956c7add7">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Results and Discussion</span>
+</span>
+</h1>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/b36e95bc9b2643948300d189234d3fc9" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">0.99 F1 score on 6 out of 8 tags &amp; 0.95+ F1 score on other 2 tags</span>
+</span>
+</li>
+<li id="https://www.notion.so/cc319b325c464dfb8865a77f3d6810a0" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">API inference time of less than 1 second on single CPU</span>
+</span>
+</li>
+</ul>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html

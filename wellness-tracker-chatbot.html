@@ -24,13 +24,13 @@
   <title>Wellness Tracker Chatbot</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -64,13 +74,174 @@
                 <span class="DateTagBar__Item DateTagBar__Date">Posted on Sat, Jan 2, 2021</span>
                             </div>
           </header>
-      <article id="https://www.notion.so/aa4b3b5f6d8e4dd397f996d889e1f583" class="PageRoot"><div id="https://www.notion.so/747150df1915469f9e20ec6c74603a38" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F84fb5462-50bf-4f1a-a422-fa5b939414e7%2FUntitled.png?width=470&amp;table=block&amp;id=747150df-1915-469f-9e20-ec6c74603a38"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F84fb5462-50bf-4f1a-a422-fa5b939414e7%2FUntitled.png?width=470&amp;table=block&amp;id=747150df-1915-469f-9e20-ec6c74603a38" style="width:470px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><h2 id="https://www.notion.so/30400871e0c14b9eb75a34d000583c11" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/30400871e0c14b9eb75a34d000583c11"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Problem Statement</span></span></h2><div id="https://www.notion.so/a47c14e0f97e40edb3822e4162fd7860" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">A bot that logs daily wellness data to a spreadsheet (using the Airtable API), to help the user keep track of their health goals. Connect the assistant to a messaging channel—Twilio—so users can talk to the assistant via text message and Whatsapp.</span></span></p></div><div id="https://www.notion.so/1cd58934ca584c5ea949caf11edafebd" class="Divider"></div><h2 id="https://www.notion.so/22b6a112edca4340af2a0a928f6cd8d7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/22b6a112edca4340af2a0a928f6cd8d7"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Proposed Solution</span></span></h2><ul class="BulletedListWrapper"><li id="https://www.notion.so/cd17ed254a2641bb8b2170064c8d497d" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">RASA chatbot with Forms and Custom actions</span></span></li><li id="https://www.notion.so/3cd802402bc74f22999c3fc5ef03b963" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Connect with Airtable API to log records in table database</span></span></li><li id="https://www.notion.so/6a4fecd851f64629b564a71d06135bd9" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Connect with Whatsapp for user interaction</span></span></li></ul><div id="https://www.notion.so/e3861b5c46ba41d1a4e4f7fb2726da6d" class="Divider"></div><h2 id="https://www.notion.so/04479fb827c0459295f894e4a2559273" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/04479fb827c0459295f894e4a2559273"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Modeling</span></span></h2><div id="https://www.notion.so/75df722b6cba4beb9b4928d81363867f" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9bbe48f8-ad96-4905-bc82-78fc31618f82%2FUntitled.png?width=1347&amp;table=block&amp;id=75df722b-6cba-4beb-9b49-28d81363867f"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9bbe48f8-ad96-4905-bc82-78fc31618f82%2FUntitled.png?width=1347&amp;table=block&amp;id=75df722b-6cba-4beb-9b49-28d81363867f" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/36f8b47ebe4b46f092a51e322a91b737" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa48e204c-2b4d-47f3-b5ed-d9eedac3ffa3%2FUntitled.png?width=1360&amp;table=block&amp;id=36f8b47e-be4b-46f0-92a5-1e322a91b737"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa48e204c-2b4d-47f3-b5ed-d9eedac3ffa3%2FUntitled.png?width=1360&amp;table=block&amp;id=36f8b47e-be4b-46f0-92a5-1e322a91b737" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/8356a8fa1e774aa0844a6a29aae2b49b" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc2d48b5-8e2c-4153-9e55-e90fcb66433e%2FUntitled.png?width=946&amp;table=block&amp;id=8356a8fa-1e77-4aa0-844a-6a29aae2b49b"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc2d48b5-8e2c-4153-9e55-e90fcb66433e%2FUntitled.png?width=946&amp;table=block&amp;id=8356a8fa-1e77-4aa0-844a-6a29aae2b49b" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/e32f08c81fde4a11bb5e6c90dd53cf93" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F44490311-c7a3-4239-a98b-ba25468bb70d%2FUntitled.png?width=1167&amp;table=block&amp;id=e32f08c8-1fde-4a11-bb5e-6c90dd53cf93"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F44490311-c7a3-4239-a98b-ba25468bb70d%2FUntitled.png?width=1167&amp;table=block&amp;id=e32f08c8-1fde-4a11-bb5e-6c90dd53cf93" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/246fdb3358e74110a3fb2ae078561f17" class="Divider"></div><h2 id="https://www.notion.so/9786d49e038f412f8f50ba27b8f00664" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/9786d49e038f412f8f50ba27b8f00664"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Delivery</span></span></h2><div id="https://www.notion.so/07734afc86b94db3b0e453ca7d0e0a1d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/sparsh-ai/chatbots/tree/master/wellnessTracker">https://github.com/sparsh-ai/chatbots/tree/master/wellnessTracker</a></span></span></p></div><div id="https://www.notion.so/7e676371eaa8490e807142512e5fa670" class="Divider"></div><h2 id="https://www.notion.so/b509a41b2aa24b859701cf675b7c7fa7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/b509a41b2aa24b859701cf675b7c7fa7"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Reference</span></span></h2><div id="https://www.notion.so/999e41a3e0e24bb982318beca3733298" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.udemy.com/course/rasa-for-beginners/learn/lecture/20746878#overview">https://www.udemy.com/course/rasa-for-beginners/learn/lecture/20746878#overview</a></span></span></p></div></article>  <footer class="Footer">
+      <article id="https://www.notion.so/aa4b3b5f6d8e4dd397f996d889e1f583" class="PageRoot">
+<div id="https://www.notion.so/747150df1915469f9e20ec6c74603a38" class="Image Image--Normal">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F84fb5462-50bf-4f1a-a422-fa5b939414e7%2FUntitled.png?width=470&amp;table=block&amp;id=747150df-1915-469f-9e20-ec6c74603a38">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F84fb5462-50bf-4f1a-a422-fa5b939414e7%2FUntitled.png?width=470&amp;table=block&amp;id=747150df-1915-469f-9e20-ec6c74603a38" style="width:470px"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<h2 id="https://www.notion.so/30400871e0c14b9eb75a34d000583c11" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/30400871e0c14b9eb75a34d000583c11">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Problem Statement</span>
+</span>
+</h2>
+<div id="https://www.notion.so/a47c14e0f97e40edb3822e4162fd7860" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">A bot that logs daily wellness data to a spreadsheet (using the Airtable API), to help the user keep track of their health goals. Connect the assistant to a messaging channel—Twilio—so users can talk to the assistant via text message and Whatsapp.</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/1cd58934ca584c5ea949caf11edafebd" class="Divider">
+</div>
+<h2 id="https://www.notion.so/22b6a112edca4340af2a0a928f6cd8d7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/22b6a112edca4340af2a0a928f6cd8d7">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Proposed Solution</span>
+</span>
+</h2>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/cd17ed254a2641bb8b2170064c8d497d" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">RASA chatbot with Forms and Custom actions</span>
+</span>
+</li>
+<li id="https://www.notion.so/3cd802402bc74f22999c3fc5ef03b963" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Connect with Airtable API to log records in table database</span>
+</span>
+</li>
+<li id="https://www.notion.so/6a4fecd851f64629b564a71d06135bd9" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Connect with Whatsapp for user interaction</span>
+</span>
+</li>
+</ul>
+<div id="https://www.notion.so/e3861b5c46ba41d1a4e4f7fb2726da6d" class="Divider">
+</div>
+<h2 id="https://www.notion.so/04479fb827c0459295f894e4a2559273" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/04479fb827c0459295f894e4a2559273">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Modeling</span>
+</span>
+</h2>
+<div id="https://www.notion.so/75df722b6cba4beb9b4928d81363867f" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9bbe48f8-ad96-4905-bc82-78fc31618f82%2FUntitled.png?width=1347&amp;table=block&amp;id=75df722b-6cba-4beb-9b49-28d81363867f">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9bbe48f8-ad96-4905-bc82-78fc31618f82%2FUntitled.png?width=1347&amp;table=block&amp;id=75df722b-6cba-4beb-9b49-28d81363867f" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/36f8b47ebe4b46f092a51e322a91b737" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa48e204c-2b4d-47f3-b5ed-d9eedac3ffa3%2FUntitled.png?width=1360&amp;table=block&amp;id=36f8b47e-be4b-46f0-92a5-1e322a91b737">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa48e204c-2b4d-47f3-b5ed-d9eedac3ffa3%2FUntitled.png?width=1360&amp;table=block&amp;id=36f8b47e-be4b-46f0-92a5-1e322a91b737" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/8356a8fa1e774aa0844a6a29aae2b49b" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc2d48b5-8e2c-4153-9e55-e90fcb66433e%2FUntitled.png?width=946&amp;table=block&amp;id=8356a8fa-1e77-4aa0-844a-6a29aae2b49b">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdc2d48b5-8e2c-4153-9e55-e90fcb66433e%2FUntitled.png?width=946&amp;table=block&amp;id=8356a8fa-1e77-4aa0-844a-6a29aae2b49b" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/e32f08c81fde4a11bb5e6c90dd53cf93" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F44490311-c7a3-4239-a98b-ba25468bb70d%2FUntitled.png?width=1167&amp;table=block&amp;id=e32f08c8-1fde-4a11-bb5e-6c90dd53cf93">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F44490311-c7a3-4239-a98b-ba25468bb70d%2FUntitled.png?width=1167&amp;table=block&amp;id=e32f08c8-1fde-4a11-bb5e-6c90dd53cf93" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/246fdb3358e74110a3fb2ae078561f17" class="Divider">
+</div>
+<h2 id="https://www.notion.so/9786d49e038f412f8f50ba27b8f00664" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/9786d49e038f412f8f50ba27b8f00664">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Delivery</span>
+</span>
+</h2>
+<div id="https://www.notion.so/07734afc86b94db3b0e453ca7d0e0a1d" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://github.com/sparsh-ai/chatbots/tree/master/wellnessTracker">https://github.com/sparsh-ai/chatbots/tree/master/wellnessTracker</a>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/7e676371eaa8490e807142512e5fa670" class="Divider">
+</div>
+<h2 id="https://www.notion.so/b509a41b2aa24b859701cf675b7c7fa7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/b509a41b2aa24b859701cf675b7c7fa7">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Reference</span>
+</span>
+</h2>
+<div id="https://www.notion.so/999e41a3e0e24bb982318beca3733298" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.udemy.com/course/rasa-for-beginners/learn/lecture/20746878#overview">https://www.udemy.com/course/rasa-for-beginners/learn/lecture/20746878#overview</a>
+</span>
+</span>
+</p>
+</div>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html

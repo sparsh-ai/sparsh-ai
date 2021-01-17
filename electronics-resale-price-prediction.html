@@ -24,13 +24,13 @@
   <title>Predicting Electronics Resale Price</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -64,13 +74,302 @@
                 <span class="DateTagBar__Item DateTagBar__Date">Posted on Sat, Jan 9, 2021</span>
                             </div>
           </header>
-      <article id="https://www.notion.so/e6765f3061d04fe4b511ce2ab3e59bc0" class="PageRoot"><div id="https://www.notion.so/67aaa70cd66f450b9279f847620b6f44" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F85262628-c71f-4dc9-a330-27018b485993%2FUntitled.png?width=1300&amp;table=block&amp;id=67aaa70c-d66f-450b-9279-f847620b6f44"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F85262628-c71f-4dc9-a330-27018b485993%2FUntitled.png?width=1300&amp;table=block&amp;id=67aaa70c-d66f-450b-9279-f847620b6f44" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><h1 id="https://www.notion.so/177b5d4f31994ee8841cb39f0170695f" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/177b5d4f31994ee8841cb39f0170695f"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Problem Statement</span></span></h1><div id="https://www.notion.so/7c591b291ea64100968c7fa282303af9" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F13984dc7-3395-4655-8fe6-60da639343e4%2FUntitled.png?width=592&amp;table=block&amp;id=7c591b29-1ea6-4100-968c-7fa282303af9"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F13984dc7-3395-4655-8fe6-60da639343e4%2FUntitled.png?width=592&amp;table=block&amp;id=7c591b29-1ea6-4100-968c-7fa282303af9" style="width:592px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><h1 id="https://www.notion.so/fce0ece5ce7e48b78b4a09130e27eff0" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/fce0ece5ce7e48b78b4a09130e27eff0"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Objective</span></span></h1><div id="https://www.notion.so/59eb1f2b77464b88b278c0b0d8a69f2d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Predict the resale price based on brand, part id and purchase quantity</span></span></p></div><h1 id="https://www.notion.so/0798bbd131754b088ae10e9737bbd8eb" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/0798bbd131754b088ae10e9737bbd8eb"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Milestones</span></span></h1><ul class="BulletedListWrapper"><li id="https://www.notion.so/540fa19e904846d8880154d1ae513dbb" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Data analysis and discovery - What is the acceptable variance the model needs to meet in terms of similar part number and quantity?</span></span></li><li id="https://www.notion.so/f1b895e2b1d34d149fac5bdca75d954f" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Model research and validation - Does the model meet the variance requirement? (Variance of the model should meet or be below the variance of the sales history)</span></span></li><li id="https://www.notion.so/b9110f9c573546d4b01f858af9b44428" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Model deployment - Traffic will increase 10 fold. So, model needs to be containerized or dockerized</span></span></li><li id="https://www.notion.so/50b8b812bc034b16a250d4f2af7638fa" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Training - Model needs to be trainable on new sales data. Methodology to accept or reject the variance of the newly trained model documented.</span></span></li></ul><h1 id="https://www.notion.so/5f196337ed1645a0b63e28965417547a" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/5f196337ed1645a0b63e28965417547a"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Deliverables</span></span></h1><div id="https://www.notion.so/c95b72d0c23c41eeaf9c6dfcdf30d1d2" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">1. Data Analysis and Discovery (identify target variance for pricing model in terms of similar part numbers and quantities). Analysis should be done on the 12 following quantity ranges: 1-4, 5-9, 10-24, 25-49, 50-99, 100-249, 250-499, 500-999, 1000-2499, 2500-4999, 5000-9999, 10000+.</span></span></p></div><div id="https://www.notion.so/4c31600b27fc42bea546a7d183966a63" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">2. ModelA Training (Resale Value Estimation [$] (Brand+PartNo.+Quantity)</span></span></p></div><div id="https://www.notion.so/20609a0b8aff4227bde00c437c67762b" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">3. ModelA Validation (variance analysis and comparison with sales history variance in terms of similar part numbers and quantities)</span></span></p></div><div id="https://www.notion.so/1a2bc46a943e44568be896a7a014cbf7" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">4. ModelA Containerization</span></span></p></div><div id="https://www.notion.so/1d9a91339eae41d580cb02b799a0965b" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">5. ModelA re-training based on new sales data</span></span></p></div><div id="https://www.notion.so/92f4a217457041f79473d69d05ea9c2c" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">6. ScriptA to calculate variance for new sales data (feedback for training results)</span></span></p></div><div id="https://www.notion.so/4f5bc7298ac14bde8aa9aa4a6b9c44f4" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">7. Documentation for re-training</span></span></p></div><div id="https://www.notion.so/84dca7b0f27f4ff7b442acae37aea40c" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">8. ModelA deployment and API</span></span></p></div><h1 id="https://www.notion.so/186ed9f35e3b4b51ac8457afffc75f6b" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/186ed9f35e3b4b51ac8457afffc75f6b"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Modeling Approach</span></span></h1><h3 id="https://www.notion.so/9aa3f03a22234e80868fdf082d6b1ea5" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/9aa3f03a22234e80868fdf082d6b1ea5"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Framework</span></span></h3><ul class="BulletedListWrapper"><li id="https://www.notion.so/a44150c6a929487a97711e3200f12ccc" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Fully connected regression neural network</span></span></li><li id="https://www.notion.so/d4884b0067884cebafbb42d17e5faa27" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">NLP feature extraction from part id</span></span></li><li id="https://www.notion.so/9bb6d3bfa6214902aa70ad93d8d24bcc" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Batch generator to feed large data in batches</span></span></li><li id="https://www.notion.so/a4ff04590db942d98680a5d5231bcbb7" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Hyperparameter tuning to find the best model fit</span></span></li></ul><h3 id="https://www.notion.so/3d761da51f7a4cecb18b7ede33cb0824" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/3d761da51f7a4cecb18b7ede33cb0824"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">List of Variables</span></span></h3><ul class="BulletedListWrapper"><li id="https://www.notion.so/0811f73fe3b04a98bf953b645344645e" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">2 years of sales history</span></span></li><li id="https://www.notion.so/f79351117c644537b5e311e06dec83f4" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">PRC</span></span></li><li id="https://www.notion.so/5957e09bf2064dd5983ef85c71aeb6e1" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">PARTNO</span></span></li><li id="https://www.notion.so/8315fcd79dbe40ef9cf2cda7b33bfbe4" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">ORDER_NUMBER</span></span></li><li id="https://www.notion.so/37243b7091b04760946ab1f16f8fa6db" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">ORIG_ORDER_QTY</span></span></li><li id="https://www.notion.so/c007c84e9c9d400ba7aaac7686df900c" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">UNIT_COST</span></span></li><li id="https://www.notion.so/6ad9c112dda74d758ad07a90581d4876" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">UNIT_REASLE</span></span></li><li id="https://www.notion.so/ca1d1653f2e547f394817ea98112b82e" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">UOM (UNIT OF MEASUREMENT)</span></span></li></ul><h1 id="https://www.notion.so/b5a7aca7901a42fc8e240619f71bb877" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/b5a7aca7901a42fc8e240619f71bb877"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Bucket of Ideas</span></span></h1><ol class="NumberedListWrapper"><li id="https://www.notion.so/2ae6dc3cb77941e1ac7b7b90e43cba2c" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Increase n-gram range; e.g. in part_id ABC-123-23, these are 4-grams: ABC-, BC-1, C-12, -123, 123-, 23-2, 3-23; Idea is to see if increasing this range further will increase the model&#x27;s performance</span></span></li><li id="https://www.notion.so/c139b49829204bc1876113bff0d4c5ad" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Employ Char-level LSTM to capture sequence information; e.g. in same part_id ABC-123-23, currently we are not maintaining sequence of grams, we don&#x27;t know if 3-23 is coming at first or last; here, the idea is to see if lstm model can be employed to capture this sequence information to improve model&#x27;s performance</span></span></li><li id="https://www.notion.so/9f85335c924c4fa4a018ffcee142b64f" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">New Loss function - including cost based loss</span></span></li></ol><div id="https://www.notion.so/1c02dc99547647a893fff81df7e78644" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/d2f92d086e8547579f2a77a367bbd818" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></article>  <footer class="Footer">
+      <article id="https://www.notion.so/e6765f3061d04fe4b511ce2ab3e59bc0" class="PageRoot">
+<div id="https://www.notion.so/67aaa70cd66f450b9279f847620b6f44" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F85262628-c71f-4dc9-a330-27018b485993%2FUntitled.png?width=1300&amp;table=block&amp;id=67aaa70c-d66f-450b-9279-f847620b6f44">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F85262628-c71f-4dc9-a330-27018b485993%2FUntitled.png?width=1300&amp;table=block&amp;id=67aaa70c-d66f-450b-9279-f847620b6f44" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<h1 id="https://www.notion.so/177b5d4f31994ee8841cb39f0170695f" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/177b5d4f31994ee8841cb39f0170695f">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Problem Statement</span>
+</span>
+</h1>
+<div id="https://www.notion.so/7c591b291ea64100968c7fa282303af9" class="Image Image--Normal">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F13984dc7-3395-4655-8fe6-60da639343e4%2FUntitled.png?width=592&amp;table=block&amp;id=7c591b29-1ea6-4100-968c-7fa282303af9">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F13984dc7-3395-4655-8fe6-60da639343e4%2FUntitled.png?width=592&amp;table=block&amp;id=7c591b29-1ea6-4100-968c-7fa282303af9" style="width:592px"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<h1 id="https://www.notion.so/fce0ece5ce7e48b78b4a09130e27eff0" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/fce0ece5ce7e48b78b4a09130e27eff0">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Objective</span>
+</span>
+</h1>
+<div id="https://www.notion.so/59eb1f2b77464b88b278c0b0d8a69f2d" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Predict the resale price based on brand, part id and purchase quantity</span>
+</span>
+</p>
+</div>
+<h1 id="https://www.notion.so/0798bbd131754b088ae10e9737bbd8eb" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/0798bbd131754b088ae10e9737bbd8eb">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Milestones</span>
+</span>
+</h1>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/540fa19e904846d8880154d1ae513dbb" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Data analysis and discovery - What is the acceptable variance the model needs to meet in terms of similar part number and quantity?</span>
+</span>
+</li>
+<li id="https://www.notion.so/f1b895e2b1d34d149fac5bdca75d954f" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Model research and validation - Does the model meet the variance requirement? (Variance of the model should meet or be below the variance of the sales history)</span>
+</span>
+</li>
+<li id="https://www.notion.so/b9110f9c573546d4b01f858af9b44428" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Model deployment - Traffic will increase 10 fold. So, model needs to be containerized or dockerized</span>
+</span>
+</li>
+<li id="https://www.notion.so/50b8b812bc034b16a250d4f2af7638fa" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Training - Model needs to be trainable on new sales data. Methodology to accept or reject the variance of the newly trained model documented.</span>
+</span>
+</li>
+</ul>
+<h1 id="https://www.notion.so/5f196337ed1645a0b63e28965417547a" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/5f196337ed1645a0b63e28965417547a">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Deliverables</span>
+</span>
+</h1>
+<div id="https://www.notion.so/c95b72d0c23c41eeaf9c6dfcdf30d1d2" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">1. Data Analysis and Discovery (identify target variance for pricing model in terms of similar part numbers and quantities). Analysis should be done on the 12 following quantity ranges: 1-4, 5-9, 10-24, 25-49, 50-99, 100-249, 250-499, 500-999, 1000-2499, 2500-4999, 5000-9999, 10000+.</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/4c31600b27fc42bea546a7d183966a63" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">2. ModelA Training (Resale Value Estimation [$] (Brand+PartNo.+Quantity)</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/20609a0b8aff4227bde00c437c67762b" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">3. ModelA Validation (variance analysis and comparison with sales history variance in terms of similar part numbers and quantities)</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/1a2bc46a943e44568be896a7a014cbf7" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">4. ModelA Containerization</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/1d9a91339eae41d580cb02b799a0965b" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">5. ModelA re-training based on new sales data</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/92f4a217457041f79473d69d05ea9c2c" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">6. ScriptA to calculate variance for new sales data (feedback for training results)</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/4f5bc7298ac14bde8aa9aa4a6b9c44f4" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">7. Documentation for re-training</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/84dca7b0f27f4ff7b442acae37aea40c" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">8. ModelA deployment and API</span>
+</span>
+</p>
+</div>
+<h1 id="https://www.notion.so/186ed9f35e3b4b51ac8457afffc75f6b" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/186ed9f35e3b4b51ac8457afffc75f6b">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Modeling Approach</span>
+</span>
+</h1>
+<h3 id="https://www.notion.so/9aa3f03a22234e80868fdf082d6b1ea5" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/9aa3f03a22234e80868fdf082d6b1ea5">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Framework</span>
+</span>
+</h3>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/a44150c6a929487a97711e3200f12ccc" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Fully connected regression neural network</span>
+</span>
+</li>
+<li id="https://www.notion.so/d4884b0067884cebafbb42d17e5faa27" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">NLP feature extraction from part id</span>
+</span>
+</li>
+<li id="https://www.notion.so/9bb6d3bfa6214902aa70ad93d8d24bcc" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Batch generator to feed large data in batches</span>
+</span>
+</li>
+<li id="https://www.notion.so/a4ff04590db942d98680a5d5231bcbb7" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">Hyperparameter tuning to find the best model fit</span>
+</span>
+</li>
+</ul>
+<h3 id="https://www.notion.so/3d761da51f7a4cecb18b7ede33cb0824" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/3d761da51f7a4cecb18b7ede33cb0824">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">List of Variables</span>
+</span>
+</h3>
+<ul class="BulletedListWrapper">
+<li id="https://www.notion.so/0811f73fe3b04a98bf953b645344645e" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">2 years of sales history</span>
+</span>
+</li>
+<li id="https://www.notion.so/f79351117c644537b5e311e06dec83f4" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">PRC</span>
+</span>
+</li>
+<li id="https://www.notion.so/5957e09bf2064dd5983ef85c71aeb6e1" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">PARTNO</span>
+</span>
+</li>
+<li id="https://www.notion.so/8315fcd79dbe40ef9cf2cda7b33bfbe4" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">ORDER_NUMBER</span>
+</span>
+</li>
+<li id="https://www.notion.so/37243b7091b04760946ab1f16f8fa6db" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">ORIG_ORDER_QTY</span>
+</span>
+</li>
+<li id="https://www.notion.so/c007c84e9c9d400ba7aaac7686df900c" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">UNIT_COST</span>
+</span>
+</li>
+<li id="https://www.notion.so/6ad9c112dda74d758ad07a90581d4876" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">UNIT_REASLE</span>
+</span>
+</li>
+<li id="https://www.notion.so/ca1d1653f2e547f394817ea98112b82e" class="BulletedList">
+<span class="SemanticStringArray">
+<span class="SemanticString">UOM (UNIT OF MEASUREMENT)</span>
+</span>
+</li>
+</ul>
+<h1 id="https://www.notion.so/b5a7aca7901a42fc8e240619f71bb877" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1">
+<a class="Anchor" target="_blank" href="#https://www.notion.so/b5a7aca7901a42fc8e240619f71bb877">
+<svg width="16" height="16" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+</path>
+</svg>
+</a>
+<span class="SemanticStringArray">
+<span class="SemanticString">Bucket of Ideas</span>
+</span>
+</h1>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/2ae6dc3cb77941e1ac7b7b90e43cba2c" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">Increase n-gram range; e.g. in part_id ABC-123-23, these are 4-grams: ABC-, BC-1, C-12, -123, 123-, 23-2, 3-23; Idea is to see if increasing this range further will increase the model&#x27;s performance</span>
+</span>
+</li>
+<li id="https://www.notion.so/c139b49829204bc1876113bff0d4c5ad" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">Employ Char-level LSTM to capture sequence information; e.g. in same part_id ABC-123-23, currently we are not maintaining sequence of grams, we don&#x27;t know if 3-23 is coming at first or last; here, the idea is to see if lstm model can be employed to capture this sequence information to improve model&#x27;s performance</span>
+</span>
+</li>
+<li id="https://www.notion.so/9f85335c924c4fa4a018ffcee142b64f" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">New Loss function - including cost based loss</span>
+</span>
+</li>
+</ol>
+<div id="https://www.notion.so/1c02dc99547647a893fff81df7e78644" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/d2f92d086e8547579f2a77a367bbd818" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+</span>
+</p>
+</div>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html

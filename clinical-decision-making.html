@@ -24,13 +24,13 @@
   <title>Clinical Decision Making</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -63,20 +73,57 @@
             <div class="DateTagBar">
                 <span class="DateTagBar__Item DateTagBar__Date">Posted on Sun, Oct 18, 2020</span>
                           <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--pink">
-            <a href="tag/Large Project">Large Project</a>
+            <a target="_blank" href="tag/Large Project">Large Project</a>
           </span>
                 <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--red">
-            <a href="tag/Insurance">Insurance</a>
+            <a target="_blank" href="tag/Insurance">Insurance</a>
           </span>
                   </div>
           </header>
-      <article id="https://www.notion.so/de099cbdfc4445ccb957ba3034038028" class="PageRoot"><div id="https://www.notion.so/86fc1d4ba09c452d9c1c2509872b86e9" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Health insurance can be complicated—especially when it comes to prior authorization (also referred to as pre-approval, pre-authorization, and pre-certification). The manual labor involved in obtaining prior authorizations (PAs) is a well-recognized burden among providers. Up to 46% of PA requests are still submitted by fax, and 60% require a telephone call, according to America’s Health Insurance Plans (AHIP). A 2018 survey by the American Medical Association (AMA) found that doctors and their staff spend an average of 2 days a week completing PAs. In addition to eating up time that physicians could spend with patients, PAs also contribute to burnout.</span></span></p></div><div id="https://www.notion.so/cdfc40b9533344898c2dc4a43068f037" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">The objective was to identify the patterns from data to create clinical decision making in Pre-Auth and improve the accuracy in a clinical decision based on historical data analysis. </span></span></p></div><div id="https://www.notion.so/3ed5f4410c8c4458ab58ae99c05c04fb" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Two use cases were identified. Use Case 1 - </span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Supervised Learning Model - to aid clinicians in UM decision making. Tasks - </em></span><span class="SemanticString">Ingest Pre-authorization data from Mongo DB into the analytical environment, Exploratory Data Analysis and Feature Engineering, Train supervised analytical models, model validation and model selection, Create a web service to be plugged into the case processing flow to call the model, and Display the recommendation from the model on UI on the authorization review screen. Use Case 2 - </span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Unsupervised Learning Model - to generate insights from the pre-authorization data. Tasks - </em></span><span class="SemanticString">Ingest Pre-authorization data from Mongo DB into the analytical environment, Cluster analysis, univariate and multivariate analysis, and Generate insights and display insights on the dashboard.</span></span></p></div><div id="https://www.notion.so/e25c11f399484e6c8063ffecdd4750c5" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Final Deliverables - Model re-training (batch mode), validation and deployment code (python scripts) with Unix command line support, Documentation - PPT, Recorded video, Technical document, Flask API backend system, HTML/PHP Web App frontend UI integration, and Plotly Dash Supervised/Unsupervised learning and insights generation dashboard.</span></span></p></div></article>  <footer class="Footer">
+      <article id="https://www.notion.so/de099cbdfc4445ccb957ba3034038028" class="PageRoot">
+<div id="https://www.notion.so/86fc1d4ba09c452d9c1c2509872b86e9" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Health insurance can be complicated—especially when it comes to prior authorization (also referred to as pre-approval, pre-authorization, and pre-certification). The manual labor involved in obtaining prior authorizations (PAs) is a well-recognized burden among providers. Up to 46% of PA requests are still submitted by fax, and 60% require a telephone call, according to America’s Health Insurance Plans (AHIP). A 2018 survey by the American Medical Association (AMA) found that doctors and their staff spend an average of 2 days a week completing PAs. In addition to eating up time that physicians could spend with patients, PAs also contribute to burnout.</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/cdfc40b9533344898c2dc4a43068f037" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">The objective was to identify the patterns from data to create clinical decision making in Pre-Auth and improve the accuracy in a clinical decision based on historical data analysis. </span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/3ed5f4410c8c4458ab58ae99c05c04fb" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Two use cases were identified. Use Case 1 - </span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Supervised Learning Model - to aid clinicians in UM decision making. Tasks - </em>
+</span>
+<span class="SemanticString">Ingest Pre-authorization data from Mongo DB into the analytical environment, Exploratory Data Analysis and Feature Engineering, Train supervised analytical models, model validation and model selection, Create a web service to be plugged into the case processing flow to call the model, and Display the recommendation from the model on UI on the authorization review screen. Use Case 2 - </span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Unsupervised Learning Model - to generate insights from the pre-authorization data. Tasks - </em>
+</span>
+<span class="SemanticString">Ingest Pre-authorization data from Mongo DB into the analytical environment, Cluster analysis, univariate and multivariate analysis, and Generate insights and display insights on the dashboard.</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/e25c11f399484e6c8063ffecdd4750c5" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Final Deliverables - Model re-training (batch mode), validation and deployment code (python scripts) with Unix command line support, Documentation - PPT, Recorded video, Technical document, Flask API backend system, HTML/PHP Web App frontend UI integration, and Plotly Dash Supervised/Unsupervised learning and insights generation dashboard.</span>
+</span>
+</p>
+</div>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html

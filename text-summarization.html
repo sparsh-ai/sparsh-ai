@@ -24,13 +24,13 @@
   <title>Text Summarization,_,</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -61,13 +71,188 @@
     </div>
         <h1 class="Header__Title">Text Summarization,_,</h1>
           </header>
-      <article id="https://www.notion.so/151e71ef07ad4c998f308e334a8aee2e" class="PageRoot"><div id="https://www.notion.so/201dc3cb112f4266874c742e0685cb8d" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8ed7e527-16f2-4769-8ad4-d48329f66494%2FUntitled.png?width=960&amp;table=block&amp;id=201dc3cb-112f-4266-874c-742e0685cb8d"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8ed7e527-16f2-4769-8ad4-d48329f66494%2FUntitled.png?width=960&amp;table=block&amp;id=201dc3cb-112f-4266-874c-742e0685cb8d" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/b29939111c314f89810b432c5f2264b8" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">To take the appropriate action, we need the latest information, but on the contrary, the amount of information is more and more growing. Making an automatic &amp; accurate summaries feature will helps us to understand the topics and shorten the time to do it.</em></span></span></p></div><div id="https://www.notion.so/5596de687db041949f1f0a9c6a13e80a" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Applications - News Summarization, Social media Summarization, Entity timelines, Storylines of event, Domain-specific summaries, Sentence Compression, Event understanding, Summarization of user-generated content</span></span></p></div><div id="https://www.notion.so/09c01e38a8df4719b4d9f35bdc7caebd" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Scope - Extractive and Abstractive summary, Single document summarization: summary = summarize(document), Multi-document summarization: summary = summarize(document_1, document_2, …), Query focused summarization: summary = summarize(document, query), Update summarization: summary = summarize(document, previous_document_or_summary)</span></span></p></div><div id="https://www.notion.so/b9c377136b1f48b693f1ee23847662ce" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Tools - HuggingFace Transformer Library</span></span></p></div><div id="https://www.notion.so/b19ef0b8448946f6b4ed10b5081da099" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Models</strong></span></span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/448aa5e4a0f246c08cdfcf8003b1945b" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">ProphetNet: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/2001.04063"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training. arXiv, 2020.</em></a></span></span></li><li id="https://www.notion.so/1d7f4a2227694a63b73af55811249ec9" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">PEGASUS: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1912.08777"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Pre-training with Extracted Gap-sentences for Abstractive Summarization. arXiv, 2019.</em></a></span></span></li><li id="https://www.notion.so/41e530e9b0ca4b588a1f41ad36905ab9" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">BERTSum: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/pdf/1903.10318.pdf"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Fine-tune BERT for Extractive Summarization. arXiv, 2019.</em></a></span></span></li><li id="https://www.notion.so/3438377e1b4f497bb4ce0860ac8d5b9e" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Seq2Seq PointerGenerator: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1704.04368v2"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Get To The Point: Summarization with Pointer-Generator Networks. arXiv, 2017.</em></a></span></span></li></ol><div id="https://www.notion.so/a2f1f20a24544f889f0c505736ef5b16" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Use Cases</strong></span></span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/00337791b81b42a0af0be9531d92cf11" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Enron Email Summarization - Email overload can be a difficult problem to manage for both work and personal email inboxes. With the average office worker receiving between 40 to 90 emails a day, it has become difficult to extract the most important information in an optimal amount of time. A system that can create concise and coherent summaries of all emails received within a timeframe can reclaim a large amount of time. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Enron-Email-Summarization-d137f618b4c5445fb595714fdc30c68d">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/3116d813837543988642f69d1cbb65c4" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">PDF Summarization over mail - Built a system that will receive a pdf over outlook mail and create a word cloud for this pdf. Then, send this word cloud back as an attachment to that email. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/PDF-to-Wordcloud-via-Mail-b7ae38d0e95e439eb68194b66bdcb889">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/46b5e162be4241d28fc179c1be1da8fb" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">BART Text Summarization - Document text summarization using the BART transformer model and visual API using the Plotly Dash app. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/BART-Text-Summarization-on-Plotly-Dash-f023de73b80c43bf9856a5ecbf24398b">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/0e1fd779b4744fc1b3dcd4aefd879059" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Transformers Summarization Experiment - Experiment with various transformers for text summarization using HuggingFace library. Summarization of 4 books. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/HuggingFace-Transformers-based-Summarization-082d7af9c97944188f735c761cd27b9b">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/fe3dc84eede4422f9635a47597a5a023" class="NumberedList" value="5"><span class="SemanticStringArray"><span class="SemanticString">CNN-DailyMail and InShorts News Summarization - Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/CNN-DailyMail-News-Summarization-f831bc810195478985aa6356bd43465a">this</a></span><span class="SemanticString"> notion for CNN-DailyMail and </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/InShorts-News-Summarization-daeb6fe3aa924a24a88657937ab43145">this</a></span><span class="SemanticString"> one for InShorts.</span></span></li><li id="https://www.notion.so/12fad7f2bd1f4764ba86725d6592014f" class="NumberedList" value="6"><span class="SemanticStringArray"><span class="SemanticString">Transformers Summarization Experiment - Experiment with various transformers for text summarization using HuggingFace library. Summarization of 4 books. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/HuggingFace-Transformers-based-Summarization-082d7af9c97944188f735c761cd27b9b">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/1178a451eee241e78f3c72d034c39da5" class="NumberedList" value="7"><span class="SemanticStringArray"><span class="SemanticString">Covid-19 article summarization - Used BERT and GPT-2 for article summarization related to covid-19. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Text-Summarization-of-Articles-ec756ff596614f29b6896927e87609b1">this</a></span><span class="SemanticString"> notion.</span></span></li></ol></article>  <footer class="Footer">
+      <article id="https://www.notion.so/151e71ef07ad4c998f308e334a8aee2e" class="PageRoot">
+<div id="https://www.notion.so/201dc3cb112f4266874c742e0685cb8d" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8ed7e527-16f2-4769-8ad4-d48329f66494%2FUntitled.png?width=960&amp;table=block&amp;id=201dc3cb-112f-4266-874c-742e0685cb8d">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8ed7e527-16f2-4769-8ad4-d48329f66494%2FUntitled.png?width=960&amp;table=block&amp;id=201dc3cb-112f-4266-874c-742e0685cb8d" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/b29939111c314f89810b432c5f2264b8" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">To take the appropriate action, we need the latest information, but on the contrary, the amount of information is more and more growing. Making an automatic &amp; accurate summaries feature will helps us to understand the topics and shorten the time to do it.</em>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/5596de687db041949f1f0a9c6a13e80a" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Applications - News Summarization, Social media Summarization, Entity timelines, Storylines of event, Domain-specific summaries, Sentence Compression, Event understanding, Summarization of user-generated content</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/09c01e38a8df4719b4d9f35bdc7caebd" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Scope - Extractive and Abstractive summary, Single document summarization: summary = summarize(document), Multi-document summarization: summary = summarize(document_1, document_2, …), Query focused summarization: summary = summarize(document, query), Update summarization: summary = summarize(document, previous_document_or_summary)</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/b9c377136b1f48b693f1ee23847662ce" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Tools - HuggingFace Transformer Library</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/b19ef0b8448946f6b4ed10b5081da099" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Models</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/448aa5e4a0f246c08cdfcf8003b1945b" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">ProphetNet: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/2001.04063">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training. arXiv, 2020.</em>
+</a>
+</span>
+</span>
+</li>
+<li id="https://www.notion.so/1d7f4a2227694a63b73af55811249ec9" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">PEGASUS: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1912.08777">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Pre-training with Extracted Gap-sentences for Abstractive Summarization. arXiv, 2019.</em>
+</a>
+</span>
+</span>
+</li>
+<li id="https://www.notion.so/41e530e9b0ca4b588a1f41ad36905ab9" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">BERTSum: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/pdf/1903.10318.pdf">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Fine-tune BERT for Extractive Summarization. arXiv, 2019.</em>
+</a>
+</span>
+</span>
+</li>
+<li id="https://www.notion.so/3438377e1b4f497bb4ce0860ac8d5b9e" class="NumberedList" value="4">
+<span class="SemanticStringArray">
+<span class="SemanticString">Seq2Seq PointerGenerator: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1704.04368v2">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Get To The Point: Summarization with Pointer-Generator Networks. arXiv, 2017.</em>
+</a>
+</span>
+</span>
+</li>
+</ol>
+<div id="https://www.notion.so/a2f1f20a24544f889f0c505736ef5b16" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Use Cases</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/00337791b81b42a0af0be9531d92cf11" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">Enron Email Summarization - Email overload can be a difficult problem to manage for both work and personal email inboxes. With the average office worker receiving between 40 to 90 emails a day, it has become difficult to extract the most important information in an optimal amount of time. A system that can create concise and coherent summaries of all emails received within a timeframe can reclaim a large amount of time. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Enron-Email-Summarization-d137f618b4c5445fb595714fdc30c68d">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/3116d813837543988642f69d1cbb65c4" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">PDF Summarization over mail - Built a system that will receive a pdf over outlook mail and create a word cloud for this pdf. Then, send this word cloud back as an attachment to that email. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/PDF-to-Wordcloud-via-Mail-b7ae38d0e95e439eb68194b66bdcb889">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/46b5e162be4241d28fc179c1be1da8fb" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">BART Text Summarization - Document text summarization using the BART transformer model and visual API using the Plotly Dash app. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/BART-Text-Summarization-on-Plotly-Dash-f023de73b80c43bf9856a5ecbf24398b">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/0e1fd779b4744fc1b3dcd4aefd879059" class="NumberedList" value="4">
+<span class="SemanticStringArray">
+<span class="SemanticString">Transformers Summarization Experiment - Experiment with various transformers for text summarization using HuggingFace library. Summarization of 4 books. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/HuggingFace-Transformers-based-Summarization-082d7af9c97944188f735c761cd27b9b">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/fe3dc84eede4422f9635a47597a5a023" class="NumberedList" value="5">
+<span class="SemanticStringArray">
+<span class="SemanticString">CNN-DailyMail and InShorts News Summarization - Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/CNN-DailyMail-News-Summarization-f831bc810195478985aa6356bd43465a">this</a>
+</span>
+<span class="SemanticString"> notion for CNN-DailyMail and </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/InShorts-News-Summarization-daeb6fe3aa924a24a88657937ab43145">this</a>
+</span>
+<span class="SemanticString"> one for InShorts.</span>
+</span>
+</li>
+<li id="https://www.notion.so/12fad7f2bd1f4764ba86725d6592014f" class="NumberedList" value="6">
+<span class="SemanticStringArray">
+<span class="SemanticString">Transformers Summarization Experiment - Experiment with various transformers for text summarization using HuggingFace library. Summarization of 4 books. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/HuggingFace-Transformers-based-Summarization-082d7af9c97944188f735c761cd27b9b">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/1178a451eee241e78f3c72d034c39da5" class="NumberedList" value="7">
+<span class="SemanticStringArray">
+<span class="SemanticString">Covid-19 article summarization - Used BERT and GPT-2 for article summarization related to covid-19. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Text-Summarization-of-Articles-ec756ff596614f29b6896927e87609b1">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+</ol>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html

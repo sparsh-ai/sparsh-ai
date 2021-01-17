@@ -24,13 +24,13 @@
   <title>Pose Estimation,_,</title>
 <link rel="icon" href="⚡"/>
   <!-- Favicon -->
-    <link rel="shortcut icon" href="⚡">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="shortcut icon" target="_blank" href="⚡">
+    <link rel="stylesheet" type="text/css" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
+    target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" target="_blank" href="css/theme.css">
   <style>
     :root {
       font-size: 18px;
@@ -45,15 +45,25 @@
 <body>
   <nav class="Navbar">
     <a href="index">
-      <div class="Navbar__Btn"><span>⚡</span> <span>Home</span></div>
+      <div class="Navbar__Btn">
+<span>⚡</span> <span>Home</span>
+</div>
     </a>
                                                                                                                                                                                                                                     <span class="Navbar__Delim">&centerdot;</span>
     <a href="notes">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg"></span> <span>Notes</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/folder.svg">
+</span> <span>Notes</span>
+</div>
     </a>
                         <span class="Navbar__Delim">&centerdot;</span>
     <a href="about">
-      <div class="Navbar__Btn"><span><img class="inline-img-icon" src="https://super.so/icon/dark/send.svg"></span> <span>About</span></div>
+      <div class="Navbar__Btn">
+<span>
+<img class="inline-img-icon" src="https://super.so/icon/dark/send.svg">
+</span> <span>About</span>
+</div>
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </nav>
   <header class="Header">
@@ -61,13 +71,148 @@
     </div>
         <h1 class="Header__Title">Pose Estimation,_,</h1>
           </header>
-      <article id="https://www.notion.so/e5b9800c4123467f98ecd365a66d0576" class="PageRoot"><div id="https://www.notion.so/c07aed897a664986a83af588cedb9612" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2fb9b92-fdbd-4d21-a1b8-6a4874a260b0%2FUntitled.png?width=960&amp;table=block&amp;id=c07aed89-7a66-4986-a83a-f588cedb9612"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2fb9b92-fdbd-4d21-a1b8-6a4874a260b0%2FUntitled.png?width=960&amp;table=block&amp;id=c07aed89-7a66-4986-a83a-f588cedb9612" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/9d8882f151d247e0bdae34d85eb73adf" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">Pose estimation is a computer vision task that infers the pose of a person or object in an image or video. This is typically done by identifying, locating, and tracking the number of key points on a given object or person. For objects, this could be corners or other significant features. And for humans, these key points represent major joints like an elbow or knee.</em></span></span></p></div><div id="https://www.notion.so/91edf8f4486541b6a8da1e44098666b8" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Applications - Activity recognition, motion capture, fall detection, plank pose corrector, yoga pose identifier, body ration estimation</span></span></p></div><div id="https://www.notion.so/cc59ad084e7442fd9e09aa3ac41ecbc6" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Scope - 2D skeleton map (3D mapping coming soon), Human Poses (product poses coming soon), Single and Multi-pose, Real-time</span></span></p></div><div id="https://www.notion.so/0465ff657c92471ba631201ccf858861" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Tools - Tensorflow PoseNet API</span></span></p></div><div id="https://www.notion.so/b9c2a6bfcd944cc58fdb7ea10885f873" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Models</strong></span></span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/d03e4026ae18406596c6838622cb8aa5" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">OpenPose: </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/abs/1812.08008"><em class="SemanticString__Fragment SemanticString__Fragment--Italic">OpenPose: Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields. arXiv, 2016.</em></a></span><span class="SemanticString"><em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em></span><span class="SemanticString">A standard bottom-up model that supports real-time multi-person 2D pose estimation. The authors of the paper have shared two models — one is trained on the Multi-Person Dataset ( MPII ) and the other is trained on the COCO dataset. The COCO model produces 18 points, while the MPII model outputs 15 points.</span></span></li><li id="https://www.notion.so/ee874decfd76488db72e6c29bac252a2" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">PoseNet: PoseNet is a machine learning model that allows for Real-time Human Pose Estimation. PoseNet can be used to estimate either a single pose or multiple poses PoseNet v1 is trained on MobileNet backbone and v2 on ResNet backbone.</span></span></li></ol><div id="https://www.notion.so/873efa754fd54af6a7352078f038a589" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Unknown"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Use Cases</strong></span></span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/5487099d30ec46ea91302bd3c9a61b0e" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">OpenPose Experiments - Four types of experiments with pre-trained OpenPose model — Single and Multi-Person Pose Estimation with OpenCV, Multi-Person Pose Estimation with PyTorch and Pose Estimation on Videos. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Pose-Estimation-with-OpenPose-7f01bee1534243f3836728d03a419969">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/44448d22d1f34d93ac0a52a4b6ab224e" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Pose Estimation Inference Experiments - Experimented with pre-trained pose estimation models. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Pose-Estimation-with-OpenPifPaf-8cb982455e01478e876c52e9324d8e6b">this</a></span><span class="SemanticString"> notion for experiments with the OpenPifPaf model, </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Pose-Estimation-with-Keypoint-RCNN-in-TorchVision-96e6aad0f36f44d3bff28e60525c6d31">this</a></span><span class="SemanticString"> one for the TorchVision Keypoint R-CNN model, and </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/Detectron-2-bb7f769860fa434d923feef3a99f9cbb">this</a></span><span class="SemanticString"> notion for the Detectron2 model.</span></span></li><li id="https://www.notion.so/b2feb70503b244389efd6f761ed32ba4" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Pose Detection on the Edge - Train the pose detector using Teachable machine, employing the PoseNet model (multi-person real-time pose estimation) as the backbone and serve it to the web browser using ml5.js. This system will infer the end-users pose in real-time via a web browser. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://teachablemachine.withgoogle.com/train/pose">this</a></span><span class="SemanticString"> link and </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/ml5-js-Pose-Estimation-with-PoseNet-5661cefe46b449998cc31838441dc26a">this</a></span><span class="SemanticString"> notion.</span></span></li><li id="https://www.notion.so/0c69c6d49d464128b89ef28707fcadaf" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Pose Detection on the Edge using OpenVINO - Optimize the pre-trained pose estimation model using the OpenVINO toolkit to make it ready to serve at the edge (e.g. small embedded devices) and create an OpenVINO inference engine for real-time inference. Check out </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/OpenVINO-4c4fc4f167cc4601ade5795a241a60da">this</a></span><span class="SemanticString"> notion.</span></span></li></ol></article>  <footer class="Footer">
+      <article id="https://www.notion.so/e5b9800c4123467f98ecd365a66d0576" class="PageRoot">
+<div id="https://www.notion.so/c07aed897a664986a83af588cedb9612" class="Image Image--PageWidth">
+<figure>
+<a target="_blank" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2fb9b92-fdbd-4d21-a1b8-6a4874a260b0%2FUntitled.png?width=960&amp;table=block&amp;id=c07aed89-7a66-4986-a83a-f588cedb9612">
+<img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2fb9b92-fdbd-4d21-a1b8-6a4874a260b0%2FUntitled.png?width=960&amp;table=block&amp;id=c07aed89-7a66-4986-a83a-f588cedb9612" style="width:100%"/>
+</a>
+<figcaption>
+<span class="SemanticStringArray">
+</span>
+</figcaption>
+</figure>
+</div>
+<div id="https://www.notion.so/9d8882f151d247e0bdae34d85eb73adf" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">Pose estimation is a computer vision task that infers the pose of a person or object in an image or video. This is typically done by identifying, locating, and tracking the number of key points on a given object or person. For objects, this could be corners or other significant features. And for humans, these key points represent major joints like an elbow or knee.</em>
+</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/91edf8f4486541b6a8da1e44098666b8" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Applications - Activity recognition, motion capture, fall detection, plank pose corrector, yoga pose identifier, body ration estimation</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/cc59ad084e7442fd9e09aa3ac41ecbc6" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Scope - 2D skeleton map (3D mapping coming soon), Human Poses (product poses coming soon), Single and Multi-pose, Real-time</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/0465ff657c92471ba631201ccf858861" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">Tools - Tensorflow PoseNet API</span>
+</span>
+</p>
+</div>
+<div id="https://www.notion.so/b9c2a6bfcd944cc58fdb7ea10885f873" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Models</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/d03e4026ae18406596c6838622cb8aa5" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">OpenPose: </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://arxiv.org/abs/1812.08008">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic">OpenPose: Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields. arXiv, 2016.</em>
+</a>
+</span>
+<span class="SemanticString">
+<em class="SemanticString__Fragment SemanticString__Fragment--Italic"> </em>
+</span>
+<span class="SemanticString">A standard bottom-up model that supports real-time multi-person 2D pose estimation. The authors of the paper have shared two models — one is trained on the Multi-Person Dataset ( MPII ) and the other is trained on the COCO dataset. The COCO model produces 18 points, while the MPII model outputs 15 points.</span>
+</span>
+</li>
+<li id="https://www.notion.so/ee874decfd76488db72e6c29bac252a2" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">PoseNet: PoseNet is a machine learning model that allows for Real-time Human Pose Estimation. PoseNet can be used to estimate either a single pose or multiple poses PoseNet v1 is trained on MobileNet backbone and v2 on ResNet backbone.</span>
+</span>
+</li>
+</ol>
+<div id="https://www.notion.so/873efa754fd54af6a7352078f038a589" class="ColorfulBlock ColorfulBlock--ColorDefault Text">
+<p class="Text__Content">
+<span class="SemanticStringArray">
+<span class="SemanticString">
+<span class="SemanticString__Fragment SemanticString__Fragment--Unknown">
+<strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Use Cases</strong>
+</span>
+</span>
+</span>
+</p>
+</div>
+<ol class="NumberedListWrapper">
+<li id="https://www.notion.so/5487099d30ec46ea91302bd3c9a61b0e" class="NumberedList" value="1">
+<span class="SemanticStringArray">
+<span class="SemanticString">OpenPose Experiments - Four types of experiments with pre-trained OpenPose model — Single and Multi-Person Pose Estimation with OpenCV, Multi-Person Pose Estimation with PyTorch and Pose Estimation on Videos. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Pose-Estimation-with-OpenPose-7f01bee1534243f3836728d03a419969">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/44448d22d1f34d93ac0a52a4b6ab224e" class="NumberedList" value="2">
+<span class="SemanticStringArray">
+<span class="SemanticString">Pose Estimation Inference Experiments - Experimented with pre-trained pose estimation models. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Pose-Estimation-with-OpenPifPaf-8cb982455e01478e876c52e9324d8e6b">this</a>
+</span>
+<span class="SemanticString"> notion for experiments with the OpenPifPaf model, </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Pose-Estimation-with-Keypoint-RCNN-in-TorchVision-96e6aad0f36f44d3bff28e60525c6d31">this</a>
+</span>
+<span class="SemanticString"> one for the TorchVision Keypoint R-CNN model, and </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/Detectron-2-bb7f769860fa434d923feef3a99f9cbb">this</a>
+</span>
+<span class="SemanticString"> notion for the Detectron2 model.</span>
+</span>
+</li>
+<li id="https://www.notion.so/b2feb70503b244389efd6f761ed32ba4" class="NumberedList" value="3">
+<span class="SemanticStringArray">
+<span class="SemanticString">Pose Detection on the Edge - Train the pose detector using Teachable machine, employing the PoseNet model (multi-person real-time pose estimation) as the backbone and serve it to the web browser using ml5.js. This system will infer the end-users pose in real-time via a web browser. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://teachablemachine.withgoogle.com/train/pose">this</a>
+</span>
+<span class="SemanticString"> link and </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/ml5-js-Pose-Estimation-with-PoseNet-5661cefe46b449998cc31838441dc26a">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+<li id="https://www.notion.so/0c69c6d49d464128b89ef28707fcadaf" class="NumberedList" value="4">
+<span class="SemanticStringArray">
+<span class="SemanticString">Pose Detection on the Edge using OpenVINO - Optimize the pre-trained pose estimation model using the OpenVINO toolkit to make it ready to serve at the edge (e.g. small embedded devices) and create an OpenVINO inference engine for real-time inference. Check out </span>
+<span class="SemanticString">
+<a class="SemanticString__Fragment SemanticString__Fragment--Link" target="_blank" href="https://www.notion.so/OpenVINO-4c4fc4f167cc4601ade5795a241a60da">this</a>
+</span>
+<span class="SemanticString"> notion.</span>
+</span>
+</li>
+</ol>
+</article>  <footer class="Footer">
         <div>&copy; Sparsh Agarwal 2021</div>
         <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        <div>Powered by <a target="_blank" href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
         </div>
     </footer>
 </body>
 
-</html>
+</html
