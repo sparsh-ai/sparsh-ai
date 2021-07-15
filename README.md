@@ -3,6 +3,7 @@
 
 
 ### Hi there, I am Sparsh Agarwal 👋
+![](https://komarev.com/ghpvc/?username=sparsh-ai&color=yellow&style=flat-square)
 [![Linkedin Badge](https://img.shields.io/badge/-sparshagarwal-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sparsh-agarwal/)](https://www.linkedin.com/in/sparsh-agarwal/)
 [![Gmail Badge](https://img.shields.io/badge/-sparsh.cloud@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:sparsh.cloud@gmail.com)](mailto:sparsh.cloud@gmail.com) 
 
