@@ -4,17 +4,12 @@
 
 ### Hi there, I am Sparsh Agarwal 👋
 ![](https://komarev.com/ghpvc/?username=sparsh-ai&color=yellow&style=flat-square)
-[![Linkedin Badge](https://img.shields.io/badge/-sparshagarwal-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sparsh-agarwal/)](https://www.linkedin.com/in/sparsh-agarwal/)
-[![Gmail Badge](https://img.shields.io/badge/-sparsh.cloud@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:sparsh.cloud@gmail.com)](mailto:sparsh.cloud@gmail.com) 
-
-- 🎯 Portfolio website: [Portfolio](https://sparsh-ai.github.io/)
-- ⚡ Fun fact: The first rule of programming- if it works, don’t touch it.🤓
+[![Upwork Hire me](https://img.shields.io/badge/Upwork-Hire%20me-green?style=flat-square&logo=Upwork&logoColor=white&link=https://www.upwork.com/workwith/sparsh)](https://www.upwork.com/workwith/sparsh)
 
 💻 **Things I love**
 - Python <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
-- Backend Development ✍️
-- Machine Learning 🧐
-- Data Science 😬
+- Building AI systems
+- Amazon Web Services
 
 <a href="https://gitstats.me/sparsh-ai">
     <img width="420" height="auto" align="right" alt="Sparsh's github stats" 
