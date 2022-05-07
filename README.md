@@ -4,7 +4,8 @@
 
 ### Hi there, I am Sparsh Agarwal 👋
 ![](https://komarev.com/ghpvc/?username=sparsh-ai&color=yellow&style=flat-square)
-[![Upwork Hire me](https://img.shields.io/badge/Upwork-Hire%20me-green?style=flat-square&logo=Upwork&logoColor=white&link=https://www.upwork.com/workwith/sparsh)](https://www.upwork.com/workwith/sparsh)
+[![Upwork Hire](https://img.shields.io/badge/Upwork-Hire%20me-green?style=flat-square&logo=Upwork&logoColor=white&link=https://www.upwork.com/workwith/sparsh)](https://www.upwork.com/workwith/sparsh)
+[![Upwork Consult](https://img.shields.io/badge/Upwork-Book%20consultation-blue?style=flat-square&logo=Upwork&logoColor=white&link=https://www.upwork.com/services/product/consultation-1482328258385178624)](https://www.upwork.com/services/product/consultation-1482328258385178624)
 
 💻 **Things I love**
 - Python <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
