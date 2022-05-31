@@ -6,7 +6,7 @@
 <!-- ![](https://komarev.com/ghpvc/?username=sparsh-ai&color=yellow&style=flat-square) -->
 [![Upwork Hire](https://img.shields.io/badge/Upwork-Hire%20me-blue?style=flat-square&logo=Upwork&logoColor=white&link=https://www.upwork.com/workwith/sparsh)](https://www.upwork.com/workwith/sparsh)
 [![Upwork Consult](https://img.shields.io/badge/Upwork-Book%20consultation-blue?style=flat-square&logo=Upwork&logoColor=white&link=https://www.upwork.com/services/product/consultation-1482328258385178624)](https://www.upwork.com/services/product/consultation-1482328258385178624)
-[![Project Portfolio](https://img.shields.io/badge/Notion-View%20portfolio-yellow?style=flat-square&logo=Notion&logoColor=white&link=https://knowledgetree.notion.site/778543367f0f42b69fe32b41289ffbdb?v=960d04f39a124c509cd085554d2aa458)](https://knowledgetree.notion.site/778543367f0f42b69fe32b41289ffbdb?v=960d04f39a124c509cd085554d2aa458)
+[![Project Portfolio](https://img.shields.io/badge/Projects-View%20portfolio-yellowgreen?style=flat-square&logo=appveyor&logoColor=white&link=https://colourful-mammal.super.site/)](https://colourful-mammal.super.site/)
 
 💻 **Things I love**
 <!-- - Python <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
